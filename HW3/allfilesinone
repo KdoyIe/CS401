@@ -1,0 +1,4343 @@
+SOURCE
+
+Image Super-Resolution Using Deep Convolutional Networks https://arxiv.org/pdf/1501.00092v3.pdf
+
+AGENT
+
+Chao Dong Et al.
+
+GOAL
+
+To increase the resolution of a given image to a higher resolution using deep learning methods. 
+
+DATA
+
+Images where there is a low and high resolution version of each image.
+
+METHODS
+
+Given a low-resolution image Y, the first convolutional layer of the SRCNN extracts a set of feature maps. The second layer maps these feature maps nonlinearly to high-resolution patch representations. The last layer combines the predictions within a spatial neighbourhood to produce the final high-resolution image.
+
+RESULTS
+
+The proposed approach, Super Resolution Convolutional Neural Network(SRCNN), learns an end-to-end mapping between low and high resolution images, with little extra pre/post-processing beyond the optimization. With a lightweight structure, the SRCNN has achieved superior performance than the state-of-the-art methods.
+
+COMMENTS
+
+
+
+SOURCE
+
+https://deepmind.com/blog/neural-scene-representation-and-rendering/?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more
+
+AGENT
+
+Machines with computer vision equipment GOALIdentify objects by name and physical appearance 
+
+DATA
+
+Various objects MethodsCameras and various photos ResultsBetter recognition of new objects exposed to the machine 
+
+COMMENTS
+
+This article discusses computer vision and machine learning. It discusses using machine learning to aid with object recognition and identification. Due to Identification being a relative concept, the machines used for this project were given a series of initial objects as sample data was given data the purposely did not resemble any of the sample data to see what connections it would make to identify new objects 
+
+
+
+SOURCE
+
+https://ieeexplore.ieee.org/xpl/tocresult.jsp?isnumber=6177717 
+
+AGENT
+
+The main developer of this project was David Ferrucci, who was working for IBM.
+
+GOAL
+
+The main goal of this project, was to make a computer system capable of processing natural language questions fast 
+enough to win at the american Quiz show Jeopardy!
+
+DATA
+
+To find the correct answer, the computer system analyze and process a huge amount of data, using a technology called DeppQA.
+
+METHODS
+
+To process the information, the computer system uses tools based on optimizations of deep Content Analysis, Natural Language 
+Processing, Information Retrieval, Machine Learning and Atificial Intelligence.
+
+RESULTS
+
+The result of this project is a machine capable to compete against players who had already appeared in the TV show
+
+COMMENTS
+
+This machine is the result of decades of experience and research, and it's interesting how it combines different technologies
+to finally achieve the goal.
+
+
+
+﻿SOURCE
+
+Times Now News "New Machine Learning system may help debunk fake news" https://www.timesnownews.com/technology-science/article/new-machine-learning-system-may-help-debunk-fake-news/295675
+
+AGENT
+
+Massachusetts Institute of Technology (MIT) researchers 
+
+GOAL
+
+Create a model for determining if a news source is biased or inaccurate.
+
+DATA
+
+150 news articles from a site. Data from MediaBias/FactCheck
+
+METHODS
+
+Used an algorithm called a Support Vector Machine (SVM) classifier and used the SVM classifier to classify websites similar to MediaBias/FactCheck. Checking previous articles and linguistic features including language complexity and structure were used to determine bias and accuracy.
+
+RESULTS
+
+The system was 65% accurate at detecting how accurate a news outlet was using a 3 point scale (highly accurate, medium or low), and roughly 70 % accurate in detecting if it is politically left-leaning, right-leaning or moderate.
+
+COMMENTS
+
+I found this article interesting but I don't believe it has a high enough accuracy yet to be used in real world applications. 65% accuracy is too low to be calling out news outlets as on average you're getting a wrong result for 1 out of 3 sites. 
+
+
+
+SOURCE
+UberEATS
+http://proceedings.mlr.press/v67/li17a/li17a.pdf
+https://eng.uber.com/michelangelo/
+https://eng.uber.com/uber-eats-trip-optimization/
+AGENT
+Uber Engineering
+GOAL
+Predicting the estimated time of a delivery and overall food preparation. To predict the total duration of the process from restaurant to customer.
+DATA
+Different time estimations on food preparation, journey and other stages during the duration of the process.
+METHODS
+Uses gradient boosted decision tree regression models to predict the end-to-end delivery time.
+RESULTS
+Created a much more accurate prediction on the delivery time.
+COMMENTS
+
+
+
+SOURCE
+
+The Guardian
+https://www.theguardian.com/technology/2017/dec/07/alphazero-google-deepmind-ai-beats-champion-program-teaching-itself-to-play-four-hours
+
+AGENT
+
+SamuelGibbs
+
+GOAL
+
+To start with develop a program that can learn to play any game and then subsequently learn how to beat any other program or human
+
+DATA
+
+The learning algrothim needs only the rules on how the game is played and can then teach itself the rules
+
+METHODS
+
+Alpha go uses many diffrent method to work this includes using Monte Carlo Tree Search and various other methods.
+It calcuilates based on previous games what the best course of action could be for a given move and can determine from this information what to do next
+It also uses machine elarning to predict what move an aponent would make based on previous moves. It can then learn sure fire stragies to defeating most players and machines
+
+RESULTS
+
+Alpha Zero within 24hours  taught itself how to playe chess but aslo was able to beat the current worlds best chess playing program. 
+It has also been generalised so that it can do this with most other games
+
+COMMENTS
+
+AlphaZero and DeepMind are to really intersting applications for Machine learning are the primary use cases of it so far
+
+
+SOURCE
+
+https://pdfs.semanticscholar.org/8e49/9c94171933fb71cc41203d703bba55b78fbf.pdf
+
+AGENT
+
+Microsoft
+
+GOAL
+
+The Goal of this project was to allow voice recognition systems such as Cortana to use machine learning to imitate human interaction. Eventually, the app will learn to understand the nuances and semantics of our language.  
+
+DATA
+
+To train their models, Microsoft extracted hundreds of thousands of anonymized Cortana query log entries through a Microsoft proprietary internal data warehouse. Each log entry corresponds to a user query, along with relevant information like time, location, duration, as well as telemetry information indicating how the user interacted with the Cortana responses and the overall status of the query. The main types of query logs focused on were General Search (Queries which Cortana redirects to Bing search), Command and Control (Queries where the user is trying to execute a task using voice command, such as adding an appointment to the calendar, or sending a text message) and Enriched Search (Queries where Cortana can provide enriched responses, such as weather conditions, current traffic, telling a joke and etc).
+
+METHODS
+
+They analyse the data from millions of user queries and build a machine learning system capable of classifying user queries into two classes; a class of queries that are addressable by Cortana with high user satisfaction, and a class of queries that are not. They then use unsupervised learning to cluster similar queries and assign them to human assistants who can complement Cortana functionality.
+
+RESULTS
+
+An example of this working is Cortana can react to certain phrases under almost any condition using probability distributions. By selecting appropriate speech segments from a recorded database, the software can then choose responses that closely resemble real-life conversation.
+
+COMMENTS
+
+Even though the research done in this paper did not have favourable results, they show signs of improvement for future research projects
+
+
+
+##5. Microsoft  
+
+SOURCE
+https://www.bernardmarr.com/default.asp?contentID=1284
+
+AGENT
+Cortana
+
+GOAL
+To return more helpful or specific responses to queries, including weaather and transport.
+
+DATA
+Logs from thousands of interactions a day with users all over the world.
+
+METHODS
+Machine learning
+
+RESULTS
+This has been a success and Cortana now returns more eloquent responses and less vague or unclear responses.
+
+COMMENTS
+If their new venture Project Brainwave takes off then this can greatly reduce the time taken for these algorithms to work, allowing 
+an array of possibilities to be opened in the world of medicine, in particular.
+
+
+
+SOURCE
+
+https://www.business-standard.com/article/news-ians/new-machine-learning-system-may-help-debunk-fake-news-118100600512_1.html
+
+AGENT
+
+Massachusetts Institute of Technology (MIT) and Qatar Computing Research Institute (QCSI)
+
+GOAL
+
+Detect the likelihood that a given news outlet will publish "fake" (that is, unfactual) news, and within that, detect the political alignment of the assertions (if there is one).
+
+DATA
+
+Data from Media Bias/Fact Check (MBFC), a website with human fact-checkers who analyse the accuracy and biases of more than 2,000 news sites.
+
+METHODS
+
+Data was fed into an SVM programmed to classify news sites the same way as MBFC.
+
+RESULTS
+
+When given a new news outlet, the system was 65 per cent accurate at detecting whether it has a high, low or medium level of "factuality", and roughly 70 per cent accurate in detecting if it is left-leaning, right-leaning or moderate. As to be expected, "fake news" outlets were found to be more likely to use language that is hyperbolic, subjective and emotional.
+
+COMMENTS
+
+N/A.
+
+
+
+
+
+SOURCE
+
+https://searchengineland.com/google-uses-machine-learning-search-algorithms-261158
+https://www.searchenginejournal.com/google-algorithm-history/rankbrain/
+https://searchenginewatch.com/2016/09/13/how-does-rankbrain-work-and-what-does-it-mean-for-search-marketers/
+
+AGENT
+
+Gary Illyes – Google 
+
+GOAL
+
+The team behind RankBrain at Google wanted:
+	- To enhance search quality and to 'come up with new signals and aggregations'. 
+	- To use RankBrain, a machine learning AI system that helps Google to process results and provide more relevant search results for users. 
+
+DATA
+
+RankBrain uses a series of databases based on people, places and things to seed the algorithm and its machine learning process. 
+
+
+METHODS
+
+RankBrain can re-rank based on historical signals. The system uses AI to transform semantics into mathematical entities, mainly vectors. It is a processing algorithm that uses machine learning to return best match to query for user when it isn't sure what is meant by the query. RankBrain is not a Natural Language Processor which would only be used by a search engine to break down sentences and understand the intent of the user from the users sentence structure and linguistics. RankBrain does not infer meaning based on language alone. Instead, it a requires a database of relationships and vectors of relationships between similiar queries. This way, it can pull back a 'best guess' result. Words are broken down into word vectors and each word is given an address such that similiar words should share similiar addresses. Google refines the results over time by improving the match between users search intent and the search results that Google actually returns.  
+
+RESULTS
+
+RankBrain handles 15% of Google’s queries, working out intent behind never before seen searches much faster than the old rules-based system. You will be able to find information about a particular thing, without using a specific word in question. For example, you may ask: 'Who won the Premier League last year?'. It would return 'Manchester City' even though this wasn't explicitly mentioned within the query itself. 
+
+COMMENTS
+
+
+
+
+
+SOURCE 
+
+https://janhuenermann.com/blog/abstract-art-with-ml?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more
+
+AGENT 
+
+Jan Huenermann
+
+GOAL 
+
+Attempt to create abstract art using Machine Learning, which can be static or dynamic art.
+
+DATA 
+
+No previous data was used - the images are generated using functions and iterations over the same image.
+
+METHODS 
+
+They used Pattern Producing neural networks, which allows for randomly generated neural networks with iteration to produce abstract images.
+
+RESULTS 
+
+With enough iterations, the algorithm was able to produce very complex and in certain cases, moving imagery using Pattern Producing neural networking.
+
+COMMENTS 
+
+Although this may not have an obvious use in a practical scenario, it also is fascinating that abstract art can be produced using machine learning. I feel it could potentially be used with tweaking to expand its usage case to detecting patterns within photographs.
+
+
+
+
+
+SOURCE
+
+https://www.hafahmy.com/blog-1/ai-machine-learning-success-stories-of-2018-that-changed-organizations-to-the-better
+Section - Digital doomsayer app predicts role irrelevance
+
+AGENT
+
+ML based Digital doomsayer app
+
+GOAL
+
+Helps HR to take effective decisions about an employee’s lay-off, regarding incentives, promotion and salary hike matters
+
+DATA
+
+Employees Resume containing their skill set and work experience
+
+METHODS
+
+Supervised Learning algorithm
+
+RESULTS
+
+It was able to identify 23,000 roles and this people were redeployed or were trained for other skills which would be helpful to the company.
+
+COMMENTS
+
+It is a good breakthrough as it will be reduce the employee cost as limited employee will be hired. Also, people with required skill-set will be hired and this may reduce the training cost.
+
+
+
+
+
+SOURCE
+
+https://www.wired.com/2016/01/in-a-huge-breakthrough-googles-ai-beats-a-top-player-at-the-game-of-go/
+
+AGENT
+
+Google
+
+GOAL
+
+Become the first Computer Go program to beat an unhandicapped professional human player using a combination of machine learning and tree search techniques
+
+DATA
+
+A vast collection of Go moves from expert playersabout 30 million moves in total
+
+METHODS
+
+DeepMind researchers trained their system to play Go on its own. But this was merely a first step. In theory, such training only produces a system as good as the best humans. To beat the best, the researchers then matched their system against itself. This allowed them to generate a new collection of moves they could then use to train a new AI player that could top a grandmaster.
+
+RESULTS
+
+After training on 30 million human moves, a DeepMind neural net could predict the next human move about 57 percent of the time, and also beat a Go Grandmaster.
+
+COMMENTS
+
+This was possibly one of if not the biggest breakthrough for Machine Learning to date, AlphaGo has since been developed into AlphaZero and can now play chess and other games, which is very impressive
+
+
+
+
+
+SOURCE
+
+https://deepmind.com/blog/neural-scene-representation-and-rendering/
+
+AGENT
+
+Google's DeepMind 
+
+GOAL
+
+To create a machine to predict what a 3d space would look like at an unseen perspective based off a single or multiple different perspective(s).
+DATA Google's DeepMind uses the GNQ (Generative Query Network) to create data. This means that the machine does not need to be trained by a human as objects do not have to labelled for the machine to understand what they are.
+
+METHODS
+
+The GNQ model has a representation network that obtains the machines observations and forms a representation of the observation. Then the machines generation network creates the same observation from a different perspective that the machine had not seen before. The machine was trained using reinforcement learning.
+
+RESULTS
+
+Google's DeepMind calculates intricate 3d environments from single perspectives and predicts what they would look like.
+
+COMMENTS
+
+I find it interesting that in the article it mentions if a human were to walk into a room and only see one perspective of a table, with only 3 legs visible that the human brain would automatically assume there were a fourth leg if they were asked to draw the room layout. Emulating our innate ability to do this with a machine is very interesting and showcases what machine learning can achieve.
+
+
+
+
+
+Source: 
+
+https://towardsdatascience.com/an-examination-of-international-cuisines-through-unsupervised-learning-93c8b56d1ea0
+
+Agent: 
+
+Ben Strum
+
+Goal: 
+
+Attempt to learn about the relationships and connections of different cuisines and foods from around the world
+
+Data: 
+
+approx 12,500 recipes from 25 different cuisine types all gotten from Yummly.
+
+Method: 
+
+Used a number of preprocessing NPL techniques, a number of unsupervised learning algorithms.
+
+Results: 
+
+A number of interesting graphs indicating relationships between several different cuisines groups. Other graphs showing primary and secondey ingredients liklihood depending on where on the graph a groups centroid was.
+
+Comments: 
+
+I found this experiment quite interesting. Many cuisines that were replated seemed quite obvios, for example Irish and English, but others came as a surprise such and Swedish and Irish. Or Japanese and Hawaiian. It would be interesting to follow this up with cultural and historical study to illustrate why these groups have similar components.
+
+
+
+
+
+SOURCE
+
+ CIO From IDG (https://www.cio.com/article/3225445/artificial-intelligence/machine-learning-success-stories.html)
+
+AGENT
+
+ Srivastava
+
+GOAL
+
+ To create the algorithm which helps users to get their maximum refund (Tax benefits)
+
+DATA
+  More than 1 billion transaction happening via Quickbooks. 
+
+
+METHODS
+
+ With the help of this 1 billion transaction, they are optimising the categorisations that occur with high accuracy. 
+
+RESULTS
+
+ Based on the categorisation, the algorithm will guide the users to achieve maximum refund through the itemised deduction process which can save upto 40% of their tax preparation time and efforts retrieving documents.
+
+COMMENTS
+ 
+ Tax system is the place people will spend lot of time in the end of year to reduce their tax or get all proof documents. This algorithm which will calculate the tax, store the documents and guide the user how they can reduce the tax. 
+
+
+
+
+
+SOURCE
+
+https://towardsdatascience.com/object-detection-with-10-lines-of-code-d6cb4d86f606 
+
+AGENT
+
+Machines with cameras 
+
+GOAL
+
+Improve detection 
+
+DATA
+
+Street Objects 
+
+METHODS
+
+Multiple photos of objects found on a city street. 
+
+RESULTS
+
+Better attention to detail for 3D objects such as cars and bikes 
+
+COMMENTS
+
+This article discusses the use of machine learning in computer vision. Through the use of machine learning machine learning has been able to advance and make use of more specific and optimized algorithms.
+ In particular machine learning has enhanced object detection for various projects that make use of machine learning in its algorithms.
+
+
+
+
+SOURCE
+
+Data Center Knowledge
+https://www.datacenterknowledge.com/machine-learning/adeptdc-wants-use-machine-learning-prevent-data-center-outages
+
+AGENT
+
+Mary Branscombe
+
+GOAL
+
+Using Machine Learning to monitor and run data centres and recove when there are failures
+
+DATA
+
+The program takes data from various data sources in the data centre such as tempeture, power supply and machine status 
+
+METHODS
+
+The program uses basic algorthims to solev samller problem such as cooling and power supply. 
+After that the machine learning functionality kicks in to find correlation between the root cause and various other sources that could potentially be causing the problem.
+Based on past cases the algorthim can detrmine the best course of action weather that be contacting the admistrator, turning off machines. Or trying to problme solve the failure.
+
+RESULTS
+
+The application can effectivley control and manage datacentres all around the world 
+
+COMMENTS
+
+An approach for businesses that is filling a much needed requirement in job sector
+
+
+
+
+
+SOURCE
+
+Automated Process Monitoring in 3D Printing Using Supervised Machine Learning
+https://www.sciencedirect.com/science/article/pii/S2351978918307820
+
+AGENT
+
+Ugandhar Delli, Shing Chang
+Department of Industrial and Manufacturing Systems Engineering
+
+GOAL
+
+To classify each material into two categories, good category or defective category.
+
+DATA
+
+Looking at the quality of the material.
+
+METHODS
+
+Using supervised learning method, support vector machine SVM.
+
+RESULTS
+
+Successfully determines whether the material was good or defective and also capable of detecting of completion failure defects.
+
+COMMENTS
+
+
+
+
+SOURCE
+
+The Inovation Enterprise (https://channels.theinnovationenterprise.com/articles/mit-researchers-use-machine-learning-for-credit-card-fraud-detection)
+
+AGENT
+
+MIT
+
+GOAL
+
+The goal of this project is to detect credit card fraud and prevent it.
+
+DATA
+
+The algorithm was fed 1.8 million transactions from a large bank.
+
+METHODS
+
+The system extracts highly detailed features from data generated from around 133,000 false positives and compares them with 289,000 false positives. Using information extracted from over 200 features for each transaction means that when a user swipes a card the model checks whether the features match fraud behavior. If they do, the sale would be blocked.
+
+RESULTS
+
+The system, based on "automated feature engineering", indicated a 54% reduction in false positive predictions compared to traditional models.
+
+COMMENTS
+
+When utilized, the technology will save bank's money and improve overall customer experience.
+
+
+
+
+
+SOURCE 
+
+https://arxiv.org/abs/1805.07470
+
+AGENT 
+
+Stephen McAleer
+Forest Agostinelli
+Alexander Shmakov
+Pierre Baldi
+
+GOAL 
+
+Solving a Rubik's Cube without human teaching or intervention.
+
+DATA 
+
+No pre-existing data was used, the algorithm learned the game by itself.
+
+METHODS 
+
+They used Autodidactic Iteration, a method of using positive reinforcement learning to teach an AI to solve a Rubik’s cube without previous knowledge of the puzzle.
+
+RESULTS 
+
+With enough training, the AI was able to solve in a median solve length (amount of moves) within 30 moves, which closely emulates what a human can do. This was above the expectations of the 
+
+COMMENTS 
+
+It is very interesting that the evolutionary algorithm can have the potential to learn how to solve a puzzle such as a Rubik’s Cube without any previous knowledge of the puzzle and how to solve it.
+
+
+
+
+
+
+
+SOURCE
+
+https://eng.uber.com/michelangelo/
+
+AGENT
+
+UberEATS, a company that delivers food to customers.
+
+GOAL
+
+Use their internal machine learning platform to help provide improved services for their customers.
+
+DATA
+
+Data is stored at Uber data centers that provide data from each delivery such as the current time, as well as data from past deliveries such as how long it took a certain resturant to prepare a meal in the past.
+
+METHODS
+
+UberEATS uses this data to predict the time required to place the order, the order to be prepared, and finally the order to be delivered. They use a gradient boosted decision tree regression models to accomplish this task. This process is ran at every stage of the delivery.
+
+RESULTS
+
+This Uber machine learning system, they call Michelangelo, is used in many parts of their business as a reproducible way to train the available data and turn it into useful information. In this case, UberEATS is able to predict the complicated problem of estimating delivery time.  
+
+COMMENTS
+
+It was surprising to me that a company like Uber uses the amount of resources they do just to store data.
+
+
+
+
+
+
+SOURCE
+
+Machine Learning: Using Algorithms to Sort Fruit - https://www.aboutamazon.co.uk/innovation/machine-learning-using-algorithms-to-sort-fruit
+
+AGENT
+
+Amazon's Automated Ripeness Detection System
+
+GOAL
+
+To determine the quality of fruits and vegetables
+
+DATA
+
+The machine was fed what good and bad products look like by inputting new product variants on a daily basis. The products are photographed and made available to the machine in the shape of data. That way, the computer gradually understands the quality standards.
+
+METHODS
+
+Pattern Matching Algorithm
+
+RESULTS
+
+The machine was able to identify bad quality produce from the good one. This helped the employees to easily remove the bad ones.
+
+COMMENTS
+
+The system is still in development phase. It still needs more data before giving a better success rate.
+
+
+
+
+
+
+SOURCE
+
+Fake News Detection using Machine Learning based Stance Detection - https://www.youtube.com/watch?v=j0n-0-3XhWc
+
+AGENT
+
+Fake Bananas
+
+GOAL
+
+To detect fake news
+
+DATA
+
+Article of news and claims(if any about the news)
+
+METHODS
+
+Stance Detection
+
+RESULTS
+
+It gives out any of the 4 results - Agree, Disagree, Discuss and Unrelated
+
+COMMENTS
+
+Relevant keywords are extracted from the article and matched with the claims. This is a good approach but if no references are found then an actual news will have end result as Disagree. As mentioned in the video, the success rate is 82% which is better and it also gives out the different sources used by it as references(claims).
+
+
+
+
+
+SOURCE
+
+Deep Visual-Semantic Alignments for Generating Image Descriptions https://arxiv.org/pdf/1412.2306.pdf
+
+AGENT
+
+Andrej Karpathy Et al.
+
+GOAL
+
+To build a model that generates natural language descriptions of images and their regions.
+
+DATA
+
+Images dataset with descriptions of each image. 
+
+METHODS
+
+Training separate Recurrent Neural Networks to first separate objects from descriptions and then to apply those objects to the images. 
+
+RESULTS
+
+The results  showed that this model provides state of the art performance on image-sentence ranking experiments. Second, they described a Multimodal Recurrent Neural Network architecture that generates descriptions of visual data. Results showed that it outperforms other retrieval baselines. 
+
+COMMENTS
+
+
+
+
+
+
+
+
+SOURCE
+
+https://www.tensorflow.org/
+
+AGENT
+
+It was originally developed by the Google Brain Team, but now it is open source, so it is constantly improving.
+
+GOAL
+
+The objetive of this project is to provide a good library that people can use for research and production.
+
+DATA
+
+It makes numerical calculations using data flow diagrams.
+
+METHODS
+
+It uses neural network to search patterns and correlations. To improve the execution speed, this technology uses a powerful linear algebra compiler.
+
+RESULTS
+
+The result of this project is an open source library that is used worldwide by companies as Airbus, Intel and Twitter.
+
+COMMENTS
+
+This project started called DistBelief, but the name was changed when Google decided to make it open source.
+
+
+
+
+
+SOURCE 
+
+http://jacobbuckman.com/post/tensorflow-the-confusing-parts-1/?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more
+
+AGENT 
+
+Jacob Buckman
+
+GOAL 
+
+Demonstrate a practical example of how to use Tensorflow in Python, and also discuss what Tensorflow is designed to work with.
+
+DATA 
+
+No previous data was used - the article is more of a demonstration of a method of Machine Learning.
+
+METHODS 
+
+They used Tensorflow, a method of Deep Learning used within Google to develop it’s AI projects and products.
+
+RESULTS 
+
+With some intermediary coding skills, the agent was able to demonstrate how to use Tensorflow to achieve an organic neural networking ecosystem, which can be used in a practical ML scenario. 
+
+COMMENTS 
+
+While this is not an article explicitly on a specific use on a technology of Machine Learning, I would argue it is more important than this - it demonstrates what can be done with the technology using a framework such as Tensorflow.
+
+
+
+SOURCE
+
+http://www-03.ibm.com/ibm/history/ibm100/us/en/icons/deepblue/
+
+AGENT
+
+This comuter system was developed by IBM.
+
+GOAL
+
+The objetive of this project was to a chess computer powerful enough to win against the chess world champion Gary Kasparov.
+
+DATA
+
+This computer could calculate up to 200 million possible positions per second.
+
+METHODS
+
+The machine worked mainly using brute-force computation.
+
+RESULTS
+
+It was the first computer beating a world champion chess player, but it only won one of six matches.
+
+COMMENTS
+
+Some time after that, IBM created DeeperBlue, that finally beat Kasparov in a 6 matches game, but this machine was accused 
+of cheating by Kasparov.
+
+
+
+
+
+
+SOURCE
+
+https://blog.openai.com/openai-five/?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more 
+
+AGENT
+
+OpenAIFive 
+
+GOAL
+
+Create a machine that can defeat a human DOTA2 player 
+
+DATA
+
+Matches of DOTA2 
+
+Methods
+
+Recording what actions and moves lead to victory in a match of DOTA2 
+
+RESULTS
+
+Machines have been able to divide matches into phases and actions into binary reward systems that recognize smaller victories mid match 
+
+COMMENTS
+
+This article speaks about an experiment/goal that machine learning has in the realm of video game development. This goal is to use machine learning to create software that is capable of defeating a human player in Dota 2. For the sake of this project the team uses the same given information that all human players are exposed to/given when starting the game. This includes the objective to win, character statistics and a full understanding of the what the game map looks like.
+
+
+
+
+
+
+
+SOURCE
+
+Making music using new sounds generated with machine learning - https://www.youtube.com/watch?v=iTXU9Z0NYoU
+
+AGENT
+
+Magenta
+
+GOAL
+
+To generate new sounds
+
+DATA
+
+Core aspects of what makes each sound
+
+METHODS
+
+NSynth - Neural Synthesizer Algorithm
+
+RESULTS
+
+Combining the various characteristics of each sound and generating a new sound(blending of original sounds)
+
+COMMENTS
+
+They created a NSynth Super hardware which is used by musicians to create new sound. The research is still going on and more new sounds are being fed into Magenta.
+
+
+
+
+
+
+
+##3. DeepMind by Google  
+
+SOURCE
+https://www.bernardmarr.com/default.asp?contentID=1090
+
+AGENT
+DeepMind
+
+GOAL
+To detect early stages of degenerative eye diseases and suggest possible treatment or preventative measures.
+
+DATA
+Millions of images of eyes and patient information.
+Mappings of a patients head and neck area.
+
+METHODS
+Machine learning
+
+RESULTS
+The machine is learning already and they hope it will possibly be able to save many people from blindness in the future.
+Reduce time taken to pinpoint conditions and create treatment plans from four hours to one hour.
+
+COMMENTS
+If they could somehow teach the computer to react to and process information in the same way as the human brain then that would truly be incredible.
+
+
+
+
+
+
+
+##6. Instagram  
+
+SOURCE
+https://www.bernardmarr.com/default.asp?contentID=1396
+
+AGENT
+The app interface
+
+GOAL
+Keep users engaged by taking note of what and who they look at most and ordering their feed accordingly.
+Remove offensive and unsocial comments from the app without relying on someone repoting it.
+
+DATA
+Users interactions with the app.
+Previous reported comments or photos and the Community Guidelines.
+
+METHODS
+Machine learning.
+
+RESULTS
+After some trial and error time, users' feeds were ordered according to who they responded to and looked at the most, which increased user engagement.
+
+COMMENTS
+The removal of comments, while good in theory, has the possibility of removing content that is not actually offensive or violating any guidelines.
+
+
+
+
+
+
+
+SOURCE
+
+https://gmail.googleblog.com/2015/07/the-mail-you-want-not-spam-you-dont.html
+
+AGENT
+
+Google Gmail
+
+GOAL
+
+Detect and classify spam emails to non spam emails
+
+DATA
+
+User's mailbox with all the further details, like the labels put by the user (mail considered as spam, mail considered as important...)
+
+METHODS
+
+Classification method to detect a spam from a sane mail. Artificial neural network to block spam email, scam mail and identity your profile (if you are more the newsletter guy)
+
+RESULTS
+
+In this blog post, Gmail claims that 0.1% of the actual spam mail volume isn't detected as spam and 0.05% of "standard" mail lands in the spam mailbox.
+
+COMMENTS
+
+
+
+
+
+
+
+SOURCE
+
+https://research.fb.com/publications/deepface-closing-the-gap-to-human-level-performance-in-face-verification/
+
+AGENT
+
+Facebook
+
+GOAL
+
+ A system that uses neural networks that identifies faces with 97.35% accuracy.
+
+DATA
+
+Trained on the largest facial dataset to-date, an identity labeled dataset of four million facial images belonging to more than 4,000 identities.
+
+METHODS
+
+In modern face recognition, the conventional pipeline consists of four stages: detect => align => represent => classify. Facebook revisited both the alignment step and the representation step by employing explicit 3D face modeling in order to apply a piecewise affine transformation, and derive a face representation from a nine-layer deep neural network. This deep network involves more than 120 million parameters using several locally connected layers without weight sharing, rather than the standard convolutional layers
+
+RESULTS
+
+The results are an improvement of more than 27% over previous systems and rivals human performance.
+
+COMMENTS
+
+This is a remarkable accomplishment, and hopefully in the near future it will be able to be used with accuracy by the police to identify criminals, etc.
+
+
+
+
+
+
+
+SOURCE
+
+https://engineeringblog.yelp.com/2015/10/how-we-use-deep-learning-to-classify-business-photos-at-yelp.html
+
+AGENT
+
+Yelp
+
+GOAL
+
+Photo classification
+
+DATA
+
+Images
+
+METHODS
+
+multiple convolutional layers (for extracting spatially local and translation-invariant features), ReLU (Rectified Linear Units) layers (for non-saturating activations), pooling layers (for down-sampling and translation-invariance), local response normalization layers (for better generalization) and fully-connected layers as in conventional feedforward neural networks. Softmax outputs and regularization methods such as dropout
+
+RESULTS
+
+Tabbed photo browsing implemented
+
+COMMENTS
+
+Still work to be done
+
+
+
+
+
+
+
+SOURCE
+
+https://www.technologyreview.com/s/603613/siri-may-get-smarter-by-learning-from-its-mistakes/
+
+AGENT
+
+Apple
+
+GOAL
+
+Make Siri 'smarter'
+
+DATA
+
+Voice clips
+
+METHODS
+
+Deep learning to improve voice recognition
+
+RESULTS
+
+Improved Siri
+
+COMMENTS
+
+Still a lot to be done in this field
+
+
+
+
+
+
+
+SOURCE
+
+https://ai.googleblog.com/2017/05/updating-google-maps-with-deep-learning.html
+
+AGENT
+
+Google
+
+GOAL
+
+Wanted the ability to be able to automatically collect information from images collected by Google's Street View cars for Google Maps. More specifically, the ability to accurately read street signs.
+
+DATA
+
+Dataset called French Street Name Signs, containing around 1 million street names, 965,917 of those being training images. This dataset was created and released by Google for themselves and others to improve their models.
+
+METHODS
+
+Images are first processed through a Convolution Neural Network which produces weighted features that are then ran through a Recurrent Neural Network.
+
+RESULTS
+
+The algorithms are able to determine the street names off of multiple pictures of street signs with an accuracy of 84.2 percent when tested on the French Street Name Signs dataset.
+
+COMMENTS
+
+Google was able to use these same algorithms, when trained with different data, to identify names of businesses from pictures of the store fronts.
+
+
+
+
+
+
+
+##2. GE Power  
+
+SOURCE
+https://www.bernardmarr.com/default.asp?contentID=1266
+
+AGENT
+The computers at GE which control the energy flow.
+
+GOAL
+Create a non-linear energy grid which allows the energy to flow in more of a network rather than a line.
+
+DATA
+100 years of data from using the same linear model for energy distribution.
+
+METHODS
+Machine learning and IoT.
+
+RESULTS
+Predictive maintenance and power optimisation from machine learning reduced "unplanned downtime by 5 percent" and "false positives by 75 percent" 
+which is a massive improvement.
+
+COMMENTS
+I think all of these endeavours promise to be incredibly beneficial to the future of energy usage and GE as a company.
+
+
+
+
+
+SOURCE
+
+Applications of Machine Learning in Pharma and Medicine ( https://www.techemergence.com/machine-learning-in-pharma-medicine/ )
+
+AGENT
+
+Researcher Jeffrey Tyner
+
+GOAL
+
+Disease identification and diagnosis of ailments.
+
+DATA
+
+Report issued by Pharmaceutical Research and Manufacturers of America in 2015 ( http://phrma-docs.phrma.org/sites/default/files/pdf/oncology-report-2015.pdf )
+
+METHODS
+
+A: Matrix representation of the supervised and unsupervised learning problem B: Decision trees map features to outcome. C: Neural networks predict outcome based on transformed representations of features D: The k-nearest neighbor algorithm assigns class based on the values of the most similar training examples
+
+RESULTS
+
+Developed two functional screening strategies making use of siRNA and small-molecule kinase inhibitor libraries to interrogate the genes and signaling pathways required for growth and viability of malignant cells. 
+
+COMMENTS
+
+It was really smart of Mr. Tyner to implement Machine Learning with Biology. But more intensive AI would be needed to identify cancer at large scale. 
+
+
+
+
+
+
+
+SOURCE
+
+https://www.autoremarketing.com/subprime/prestige-financial-services-deploys-artificial-intelligence-subprime-underwriting
+
+AGENT
+
+ZestFinance and Prestige Financial Services
+
+GOAL
+
+To employ Zest Automated Machine Learning (ZAML) software in order to develop an ML model which predicts borrower risk and helps make load underwriting more efficient.
+
+DATA
+
+Various features pertaining to prospective borrowers' credit history.
+
+METHODS
+
+Not specified.
+
+RESULTS
+
+A 36% increase increase in new applicants and a 14% higher approval rate.
+
+COMMENTS
+
+N/A
+
+
+
+
+
+
+
+SOURCE
+
+https://deepmind.com/blog/neural-scene-representation-and-rendering/?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more
+
+AGENT
+
+Dr Ali Eslami, Research scientist at DeepMind
+
+GOAL
+
+To form a framework that lets machines perceive their surroundings by training only on data obtained by themselves as they move around scenes and provide a 3D render.
+
+DATA
+
+The researchers trained their network on a collection of procedurally-generated environments in a simulated 3D world, containing multilpe objects in random positions, colours, shapes and textures, with randomised light sources and heavy occlusion.
+
+METHODS
+
+The GQN model is composed of two parts: a representation network and a generation network. The representation network takes the agent's observations as its input and produces a representation (a vector) which describes the underlying scene. The generation network then predicts (imagines) the scene from a previously unobserved viewpoint. The representation network does not know which viewpoints the generation network will be asked to predict, so it must find an efficient way of describing the true layout of the scene as accurately as possible. It does this by capturing the most important elements, such as object positions, colours and the room layout, in a concise distributed representation. During training, the generator learns about typical objects, features, relationships and regularities in the environment. This shared set of concepts enables the representation network to describe the scene in a highly compressed, abstract manner, leaving it to the generation network to fill in the details where necessary.
+
+RESULTS
+
+The GQN's generation network can imagine previously unobserved scenes from new viewpoints with remarkable precision. When given a scene representation and new camera viewpoints, it generates sharp images without any prior specification of the laws of perspective, occlusion, or lighting. It can also learn to count, localise and classify objects without any object-level labels. It can represent, measure and reduce uncertainty. It is capable of accounting for uncertainty in its beliefs about a scene even when its contents are not fully visible, and it can combine multiple partial views of a scene to form a coherent whole.
+ 
+COMMENTS
+
+
+
+
+
+
+
+
+﻿SOURCE
+
+Analytics Vidhya "An Autonomous Car Learned how to Drive itself in 20 minutes using Reinforcement Learning" https://www.analyticsvidhya.com/blog/2018/07/autonomous-car-learnt-drive-itself-20-minutes-using-reinforcement-learning/ https://arxiv.org/pdf/1807.00412.pdf
+
+AGENT
+
+Wayve
+
+GOAL
+
+Have a autonomous car teach itself how to drive.
+
+METHODS
+
+Reinforcement Learning. A 4-layered neural network. When the car does an illegal move or starts to move off the track, a safety driver edges it back on and the network learns it's mistake.
+
+RESULTS
+
+The car learned how to drive around the track in 20 minutes after approximately 10 trials.
+
+COMMENTS
+
+While it is interesting to have a car teach itself to drive, I think that this car only learned how to drive a single track in the conditions that were present during the trial. The car may not know how to drive in night time or in rainy weather on the track, let alone know how to drive a different track.
+
+
+
+
+
+
+
+SOURCE
+
+Playing Atari with Deep Reinforcement Learning https://arxiv.org/pdf/1312.5602.pdf
+
+AGENT
+
+Volodymyr Mnih Et al.
+
+GOAL
+
+Train a deep learning model to successfully learn control policies directly from high-dimensional sensory input using reinforcement learning. The resulting model is then used to play atari games. The ultimate goal being to play any atari game on visual input alone. 
+
+DATA
+
+210 x 160 resolution RGB video at 60Hz of atari games. No game specific information. 
+
+METHODS
+
+The algoritm used is Deep Q-learning with Experience Replay. It learned from nothing but the video input, the reward and terminal signals, and the set of possible actions
+
+RESULTS
+
+This method was applied to seven Atari 2600 games from the Arcade Learning Environment, with no adjustment of the architecture or learning algorithm. The model outperforms all previous approaches on six of the games and surpasses a human expert on three of them.
+
+COMMENTS
+
+This method utilised complicated algorithms to achieve a model that learns to play atari games exactly as a human would, this elevates it far above playing games through evolutionary algorithms for example. 
+
+
+
+
+
+
+
+SOURCE
+
+https://medium.com/airbnb-engineering/categorizing-listing-photos-at-airbnb-f9483f3ab7e3
+
+AGENT
+
+Airbnb
+
+GOAL
+
+To automatically categorize rooms based off of images on Airbnb
+
+DATA
+
+Images of rooms taken from Airbnb
+
+METHODS
+
+Retraining the ResNet50 model which uses computer vision to identify what an image is. This involved many different learning techniques such as transfer learning and unsupervised learning. Originally the ResNet50 model could already tell if the image was indoors or outdoors, but needed to be trained in object detection. The Tensorflow object detection api was used to assist in looking at objects in a room to identify what they were and to categorize the room overall. Using knowledge on what is commonly in each room, rooms can be categorized from their objects.
+
+REULTS
+
+An easier way for Airbnb users to list their houses amenities and rooms based off of photos, and for other users to see what amenities and rooms the listing they are viewing contains.
+
+COMMENTS
+
+Airbnb show how machine learning can be used to make a service more efficient and accessible to all, using previously created models to develop an application for their service. 
+
+
+
+
+
+
+
+SOURCE 
+
+https://deepmind.com/blog/capture-the-flag/?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more
+
+AGENT 
+
+Google Deepmind
+
+GOAL 
+
+To create a machine that could play at the same or to a higher ability compared to humans in a game of capture the flag in Quake 3
+
+DATA 
+
+The data for this was taken in real time as the agents had to work out from scratch how to play the game and how to act.
+
+METHODS 
+
+It used a single reinforcement signal, and since capture the flag is a team game, each player or bot had its own reward signal combined with some optimisation which focuses the agents internal reward system to goals for winning a match.
+
+RESULTS 
+
+Google ran a tournament to see how their bots would perform this included having 40 human players. The teams were mixes of bots and human players. Overall, the bots ended up having a higher winrate than the humans, and human players rated them to be more collaborative.
+
+COMMENTS 
+
+This machine demonstrates how bots can interact with humans in a 3d environment. From other bots such as the Dota 2 OpenAI bot, many professional players may adopt strategies or playstyles that the bots display. These strategies tend to be abstract, but functional. It would be interesting to see how such abstract but efficient ideas could be used for other applications such as real world problems.
+
+
+
+
+
+
+
+﻿SOURCE
+
+Fortune "AI Is Now YouTube's Biggest Weapon Against the Spread of Offensive Videos" http://fortune.com/2018/04/24/youtube-machine-learning-content-removal/
+
+AGENT
+
+YouTube
+
+GOAL
+
+To quickly remove or hide videos with questionable content from the YouTube website.
+
+DATA
+
+A large array of videos on the website, comparing videos that have been approved by human moderators against those that were removed. Metadata from the video file itself, user-inputted tags and descriptions.
+
+METHODS
+
+Not stated in the article. Most likely compares videos against examples of questionable content. The article states that YouTube has hired experts who deal with the subject matter of the banned videos content, which can help identify key triggers for the algorithm to look into when comparing correct vs incorrect videos.
+
+RESULTS
+
+In Early 2017, YouTube has removed 8 percent of violent extremist content before it gets 10 views. After starting working with machine learning, this figure has been increased to over 50 percent by the middle of 2017. The algorithm flagged more than 83 percent of 8 million banned videos in the last quarter of 2017 with the remaining amount being flagged by humans.
+
+COMMENTS
+
+This article highlights how important machine learning is in the world of big data. According to Business Insider, in 2017 over 400 hours of video was being uploaded every minute to YouTube. Scanning through this data with humans is near impossible.
+
+
+
+
+
+
+
+
+SOURCE
+
+Global Fishing Watch
+
+AGENT
+
+Google in partnership with Oceana and SkyTruth
+
+GOAL
+
+Help inform sustainable policy and identify suspicious behaviors for further investigation
+
+DATA
+
+Hundreds of thousands of vessels contribute more than 22 million data points every day
+
+METHODS	
+	
+RESULTS
+
+The project has had great success in achieving its goals
+
+COMMENTS	
+
+
+
+
+
+
+
+SOURCE
+
+https://www.oreilly.com/ideas/what-machine-learning-means-for-software-development
+
+AGENT
+
+Machine 
+
+GOAL
+
+Apply machine learning to multiple fields of computer science 
+
+DATA
+
+Various objects and numbers 
+
+METHODS
+
+Reward Systems 
+
+RESULTS
+
+Advancemnts in various fields of computer science 
+
+COMMENTS
+
+This article provided insight about the fundamental concepts of machine learning and how it is used. Machine learning is an aspect of computer science that has been extended to multiple other applications of computer science. These fields include data science, engineering, and artificial intelligence. It emphasizes that machine learning thrives specifically in allowing machines to be better at pattern recognition. Through the use of pattern recognition many of the repetitive tasks that are done in a day to day process can be eliminated which will allow people to take on more intelligence dependent tasks.
+
+
+
+
+
+
+
+SOURCE
+
+Machine learning for real-time prediction of complications in critical care, a retrospective study https://www.sciencedirect.com/science/article/pii/S221326001830300X
+
+AGENT
+
+Alexander Meyer, Dina Zverinski, Boris Pfahringer et al.
+
+GOAL
+
+Wanted to predict whether severe complications will occur after a cardiothoracic surgery.
+
+DATA
+
+Patients who underwent major open-heart surgery over 16 years starting in Jan 1, 2000.
+
+METHODS
+
+Used deep learning methods using recurrent neural networks. Measured the accuracy and timeliness of the model and compared the predictive quality to commonly used clinical reference tools.
+
+
+RESULTS
+
+Showed accurate predictions with the following PPV, Positive Predictive Value, and sensitivity scores respectively PPV 0.90 and sensitivity 0.85 for mortality, 0.87 and 0.94 for renal failure, and 0.84 and 0.74 for bleeding. The predictions outperformed the standard clinical reference tools.
+
+COMMENTS
+
+
+
+
+
+
+SOURCE
+
+https://projecteuclid.org/download/pdf_1/euclid.ss/1009213726
+
+AGENT
+
+Leo Breiman
+ 
+GOAL
+
+Using data to solve problems adopting more diverse set of tools.
+
+DATA
+
+Think of the data as being generated bya black box in which a vector of input variables x (independent variables) go in one side, and on the other side the response variables y come out. Inside the black box, nature functions to associate the predictor variables with the response variables.
+
+METHODS
+
+The analysis in this culture starts with assuming a stochastic data model for the inside of the black box. For example, a common data model is that data are generated by independent draws from response variables = f(predictor variables, random noise, parameters). The analysis in this culture considers the inside of the box complex and unknown. Their approach is to find a function fx—an algorithm that operates on x to predict the responses y.
+
+RESULTS
+
+Higher predictive accuracy is associated with more reliable information about the underlying data mechanism. Weak predictive accuracy can lead to questionable conclusions.
+Algorithmic models can give better predictive accuracy than data models, and provide better information about the underlying mechanism.
+
+COMMENTS
+
+Late. Leo Breiman had a great research using Data models but it is not necessary to use Data Models. Here the emphasis needs to be on problem and data.
+
+
+
+
+
+
+
+
+Source:
+
+Condliffe, J., (2017, Jan. 31st)., An AI Poker Bot Has Whipped the Pros, https://www.technologyreview.com/s/603544/an-ai-poker-bot-has-whipped-the-pros/
+Brown, H. (2017, Jan. 20th), How does Libratus (AI bot) work?, https://www.quora.com/How-does-Libratus-AI-bot-work
+
+Agent:
+
+The bot that played was named Libratus
+
+Goal:
+
+Libratus challenged the top professional poker players to a series of Texas holdem poker matches. The overall goal was to defeat the champion poker players in poker.
+
+Data:
+
+The data Libratus used was from self-played games, using a Monte Carlo Counterfactual Regret Minimization (MCCFR). 
+
+Method:
+
+From the data of it's own games, Libratus develops it's own strategy guide depending on the  situations it finds itself in. This end game solving was developed by Professor Thomas Sandholm and his phd student Noam Brown.
+
+Results:
+
+The result was that Libratus took home $1.8 million in chips, while it's compitition all left with a deficite.
+I just wonder what else their method for developing a dynamic strategy could be used towards. Poker being an inperfect game of information, Libratus' strategy shows that machines can think stratigicly.
+
+
+
+
+
+
+
+SOURCE
+
+https://keiwan.itch.io/evolution
+
+AGENT
+
+Keiwan Donyagard. He is an independent software developer.
+
+GOAL
+
+The main goal of this project is to make easy to understand how machine learning works, using an amusing simulator, where
+the user can use joints, bones and muscles to make a creature that evolves for generations.
+
+DATA
+
+The only data required is about the figure that the user designs to start the simulation, and the data obtained from
+previous generations.
+
+METHODS
+
+To improve how the figure moves, the simulator uses genetic algorithm and neural networks.
+
+RESULTS
+
+The output of this project is a very easy to use simulator that can be installed both in a mobile phone as in a computer.
+
+COMMENTS
+
+While it is true that the simulator doesn't achieve an important goal, it shows in a very simple way how machine learning
+works. Thanks to that, the simulator is a good didactic tool to use with beginners.
+
+
+
+
+
+
+
+SOURCE
+
+https://deepmind.com/
+
+AGENT
+
+Deepmind is a company founded 2010 by Demis Hassabis, Shane Legg and Mustafa Suleyman, but Google bought it in 2014.
+
+GOAL
+
+The goal of this project is to develop self-learning programs, that are able to solve problems without any human help. 
+
+DATA
+
+As this technology can be used for many different purposes, the data needed changes depending on the task given to the machine.
+
+METHODS
+
+This system is based mainly in advanced learning algorithms and neural network.
+
+RESULTS
+
+Right now, the company has already developed an IA that learns how to play some videogames as Space Invaders and Breakout, in a similar way that a human does. The also developed systems as AlphaGo and AlphaZero, that learn how to play againt humans.
+
+COMMENTS
+
+As a investigation company, they always have projects in process and many publications.
+
+
+
+
+
+
+
+
+SOURCE 
+
+https://blog.openai.com/openai-five/?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more
+
+AGENT 
+
+OpenAI
+
+GOAL 
+
+OpenAI wanted to develop a team of five neural networks to compete against professional players in the popular online game Dota 2.
+
+DATA 
+
+There are many playable characters within the game and it used LSTM data for each of them.
+
+METHODS 
+
+It used reinforcement learning simulating 180 years of gameplay a day. Games last an average of 45 minutes, so the bot was running multiple games at once at a higher speed than usual.
+
+RESULTS 
+
+OpenAI was brought in to play against one of the best teams that play Dota 2 professionally during one of their tournaments. While not as successful as the original OpenAI 1v1 Dota bot, they performed quite well on the stage and it is still a great advancement as the 5v5 format is much more complicated than the 1v1 format.
+
+COMMENTS 
+
+OpenAI 5 shows great advancements to machine learning. Previously bots to play games like Chess and Go where made. However, Dota 2 and other online games are much more complex when it comes to choices, as there is many more moves you can make at any given moment. 
+
+
+
+
+
+
+SOURCE
+
+Healthcare IT News (https://www.healthcareitnews.com/news/machine-learning-helps-ui-health-care-reduce-surgical-site-infection-74-save-12-million)
+
+AGENT
+
+University of Iowa
+
+GOAL
+
+The goal of this project is to reduce surgical site infection.
+
+DATA
+
+The system uses curated knowledge of where and when specific critical decisions that drive outcomes are being made by providers for numerous clinical conditions.
+
+METHODS
+
+The system uses predictive analytics on real-time patient data from the electronic medical record during surgery to determine a patient’s risk of developing a surgical site infection.
+
+RESULTS
+
+This system has led to a 74 percent reduction in surgical site infection.
+
+COMMENTS
+
+The money saved due to this decrease is $1.2 million.
+
+
+
+
+
+
+
+
+
+SOURCE
+
+ CIO From IDG (https://www.cio.com/article/3225445/artificial-intelligence/machine-learning-success-stories.html)
+
+AGENT
+
+ Bill Hoffman
+
+GOAL
+
+ To increase the personalisation across the bank's, wholesale, commercial wealth and banking units.
+
+DATA
+
+ User's web-surfing data and user's behavioural data.
+
+METHODS
+
+ The web surfing data to understand what user exactly needs, like if they search for some details regarding housing loan in some US banking site and next time when that user comes to bank the costumer service agent can easily follow up with that. Using behavioural data, they are understanding when and how to contact users. They are using Salesforce.com’s Einstein AI/ML technology.
+
+RESULTS
+
+ This reduce so much manual handling of bank documents, process. They will automate all the process for instance, Einstein can also put a calendar invite into the agent’s calendar to remind them to call the candidate 
+
+COMMENTS
+
+ This is very useful technology and this can reduce the spamming mail to all users. With the help of this all banking sites can send mail or other promotion those who are really in need of it.
+
+
+
+
+
+SOURCE
+
+http://news.mit.edu/2018/automating-molecule-design-speed-drug-development-0706
+
+AGENT
+
+Wengong Jin, a PhD student in CSAIL, Regina Barzilay, the Delta Electronics Professor at CSAIL and EECS and Tommi S. Jaakkola, the Thomas Siebel Professor of Electrical Engineering and Computer Science in CSAIL, EECS, and at the Institute for Data, Systems, and Society.
+
+GOAL
+
+To automate the normally time-consuming error-prone process of designing new molecules for the pharmaceutical industry with efficient results.
+
+DATA
+
+The researchers trained their model on 250,000 molecular graphs from the ZINC database, a collection of 3-D molecular structures available for public use. They tested the model on tasks to generate valid molecules, find the best lead molecules, and design novel molecules with increase potencies.
+
+METHODS
+
+They basically take input molecular structure data and directly create molecular graphs which are a detailed respresentation of a molecular structure. It breaks those graphs down into smaller clusters of valid functional groups that it uses as "building blocks" that help it more accurately reconstruct and better modify molecules compared to the generic SMILES method that uses strings to represent atoms and bonds which results in molecules that are chemically invalid.
+
+RESULTS
+
+In initial tests, the researchers' model generated 100 percent chemically valid molecules compared to the traditional SMILES model that generated 43 percent valid molecules from the same distribution. Also the model searched an entire collection of molecules to find the best lead molecule with a 30 percent higher potency than usual systems. It also created new molecules that averaged more than 80 percent improvement in potency.
+
+COMMENTS
+
+
+
+
+
+
+
+
+
+SOURCE
+
+https://www.lebigdata.fr/mit-machine-learning-fake-news http://ide.mit.edu/sites/default/files/publications/2017%20IDE%20Research%20Brief%20False%20News.pdf
+
+AGENT
+
+MIT
+
+GOAL
+
+Create a tool that is able to detect fake news and the political influence of a given article.
+
+DATA
+
+Data from https://mediabiasfactcheck.com/, that allows given a source to judge its precision and its political side.
+
+METHODS
+
+From the data, the tool can evaluate a source on 5 criteria : semantic and textual check, Wikipedia website from the source, structure of the URL, Twitter account and web traffic.
+The analyze of an article includes around 150 criteria. In the end, the tool can evaluate the precision as low, medium or high and the political side as far left, left, left-center, center, center-right, right, far right.
+
+RESULTS
+
+From 150 article from a source of information, the MIT tool is able to get the good precision 65% of the time and 70% of the time for the political side.
+Even if this result will improve over time, the main idea there is to help the human work to verify sources.
+
+COMMENTS
+
+The final goal is to create an application to allow the user to be exposed to different political sides.
+
+
+
+
+
+
+
+
+SOURCE
+
+https://www.wired.co.uk/article/how-do-netflixs-algorithms-work-machine-learning-helps-to-predict-what-viewers-will-like
+
+AGENT
+
+Netflix
+
+GOAL
+
+Give customers shows that they like but would not have chosen themselves.
+
+DATA
+
+Explicit data given by customers when they like or dislike a show. Implicit data gathered from customers viewing habits such as what show they watched and what time of day. 
+
+METHODS
+
+Use machine learning algorithms to place customers into multiple of the thousands of categories of other customers. These algorithms do this by knowing how to figure out the most important parts of the data given about a customer.
+
+RESULTS
+
+Netflix is able to give predictions on what customers would enjoy watching based on complex connections between shows and rely less on suggesting specific genres of shows.
+
+COMMENTS
+
+This media article focuses more on the outcomes of the algorithms and less about the technicalities of them.
+
+
+
+
+
+
+
+
+
+SOURCE
+
+https://www.techrepublic.com/article/ibm-watson-the-inside-story-of-how-the-jeopardy-winning-supercomputer-was-born-and-what-it-wants-to-do-next/
+
+AGENT
+
+IBM
+
+GOAL
+
+Beating Humans in Jeopardy. Using a combination of machine learning, natural language processing and information retrieval techniques.
+
+DATA
+
+The information that DeepQA would eventually be able to query for Jeopardy was 200 million pages of information, from a variety of sources. All the information had to be locally stored - Watson wasn't allowed to connect to the Internet during the quiz
+
+METHODS
+
+IBM developed DeepQA, a massively parallel software architecture that examined natural language content in both the clues set by Jeopardy and in Watson's own stored data, along with looking into the structured information it holds. The component-based system, built on a series of pluggable components for searching and weighting information, took about 20 researchers three years to reach a level where it could tackle a quiz show performance and come out looking better than its human opponents.
+
+First up, DeepQA works out what the question is asking, then works out some possible answers based on the information it has to hand, creating a thread for each. Every thread uses hundreds of algorithms to study the evidence, looking at factors including what the information says, what type of information it is, its reliability, and how likely it is to be relevant, then creating an individual weighting based on what Watson has previously learned about how likely they are to be right. It then generated a ranked list of answers, with evidence for each of its options.
+
+RESULTS
+
+IBM's Watson beats two human champions in a Jeopardy competition
+
+
+COMMENTS
+
+While Watson had the questions delivered in text rather than by listening to the quizmaster, he played the game like his human counterparts: puzzle over the question, buzz in, give the answer that's most likely to be right, tot up some prize money, maybe with the advancments there have been since it could react to the quizmaster's voice.
+
+
+
+
+
+
+
+SOURCE
+New Altas (https://newatlas.com/fake-news-machine-learning-mit/56652/)
+AGENT
+MIT
+GOAL
+THe goal was to develop a new machine learning system designed to evaluate not only individual articles, but entire news sources. The system is programmed to classify news sources for general accuracy and political bias.
+DATA
+The system was fed data from a source called Media Bias/Fact Check (MBFC). This independent, non-partisan resource classifies news sources based on political bias and accuracy.
+METHODS
+The system was trained to classify the bias and accuracy of a source based on five features: textual, syntactic and semantic article analysis; its Wikipedia page; Twitter account; URL structure; and web traffic.
+RESULTS
+Researchers report it is 65 percent accurate in detecting factual accuracy and 70 percent accurate at detecting political bias, compared to similar human-checked data from MBFC.
+COMMENTS
+It is pretty accurate for the amount data it is trained on.
+
+
+
+
+
+SOURCE
+
+https://sites.google.com/view/streetlearn https://arxiv.org/pdf/1804.00168.pdf
+
+AGENT
+
+Google DeepMind's StreetLearn
+
+GOAL
+
+Be able to navigate from point A to point B in a city without knowing the map.
+
+DATA
+
+Google Street View images from cities of New York, Paris and London so far. As an input, the target location (latitude/longitude) is given.
+
+METHODS
+
+Location from real-world imagery, as the human eye, the program can detect vegetation, architectures and landmarks to help find its path.
+Deep reinforcement learning for navigation and deep reinforcement learning for planning and mapping.
+
+RESULTS
+
+The agent can navigate through the different areas of city (example : Harlem and Central Park for New York) and adapt itself to other areas (Lower Manhattan in New York for example).
+
+COMMENTS
+
+The idea is to extend this method to entirely new cities.
+
+
+
+
+
+
+
+SOURCE
+
+https://www.researchgate.net/profile/Arvind_Singh56/post/What_is.../Cutler.pdf
+
+AGENT
+
+Adele Cutler, D. Richard Cutler and John R. Stevens
+
+GOAL
+
+Random Forests are an extension of Breiman’s bagging idea and were developed as a competitor to boosting. Random Forests can be used for either a categorical response variable, referred to in as “classification”, or a continuous response, referred to as “regression".
+
+METHODS
+
+A Random Forest is a tree-based ensemble with each tree depending on a collection of random variables. More formally, for a p-dimensional random vector X = (X1,...,Xp)T representing the real-valued input or predictor variables and a random variable Y representing the real-valued response, we assume an unknown joint distribution PXY (X,Y). The goal is to find a prediction function f(X) for predicting Y. The prediction function is determined by a loss function L(Y, f(X)) and defined to minimize the expected value of the loss EXY (L(Y, f(X))) (1) where the subscripts denote expectation with respect to the joint distribution of X and Y.
+
+RESULTS
+
+The Output was successful and Integration of new and additional features was actively Supported.
+
+COMMENTS
+
+Random Forests are a multi-purpose tool, applicable to both regression and classification problems, including multi class classification. This algorithm can be sorted more for further applications.
+
+
+
+
+
+
+
+SOURCE
+
+https://blog.twitter.com/engineering/en_us/topics/insights/2017/using-deep-learning-at-scale-in-twitters-timelines.html
+
+AGENT
+
+Twitter
+
+GOAL
+
+Curated timelines
+
+DATA
+
+User data from twitter
+
+METHODS
+
+discretization, sparse linear layer, a sampling scheme associated with a calibration layer
+
+RESULTS
+
+Improved user experience
+
+COMMENTS
+
+good job twitter
+
+
+
+
+
+
+
+
+
+SOURCE		
+
+IBM
+
+AGENT
+
+Principal investigator David Ferrucci
+
+GOAL
+
+The computer system was initially developed to answer questions on the quiz show Jeopardy. 
+
+DATA
+
+The sources of information for Watson include encyclopedias, dictionaries, thesauri, newswire articles, and literary works. Watson also used databases, taxonomies, and ontologies. Specifically, DBPedia, WordNet, and Yago were used. The IBM team provided Watson with millions of documents, including dictionaries, encyclopedias
+
+METHODS	
+	
+RESULTS		
+
+In 2011, the Watson computer system competed on Jeopardy! winning the first place prize of $1 million.
+
+COMMENTS	
+
+Healthcare, IBM Watson Group, Chatterbot, Building Codes, Teaching Assistant, Weather forecasting, Fashion and Tax Preparation
+
+
+
+
+
+
+
+
+
+SOURCE
+
+https://www.adweek.com/digital/deepface
+
+AGENT
+
+Facebook
+
+GOAL
+
+Develop DeepFace, software capable of recognizing when two pictures are of the same faces. This is called facial verification.
+
+DATA
+
+Labeled dataset containing 4 million pictures of around 4000 individuals. This was the largest facial dataset at the time.
+
+METHODS
+
+Used a neural network with 9 layers and 120 million parameters. Instead of standard convolution layers, DeepFace uses locally connected layers without weight sharing.
+
+RESULTS
+
+DeepFace was 97.25 percent accurate	on a dataset of faces called Labeled Faces in the Wild. This was an improvement over the previous facial verification and just short of the level of accuracy humans can produce.
+
+COMMENTS
+
+This method of facial recognition seems like an easy choice for a company that has access to such a large dataset of labeled pictures. I am interested in learning why they would choose to use locally connected layers instead of the standard way. 
+
+
+
+
+
+
+SOURCE
+
+Forbes.com
+https://www.forbes.com/sites/bernardmarr/2018/10/05/how-does-amazons-alexa-really-work/#784baffd1937
+
+AGENT
+
+Bernard Marr
+
+GOAL
+
+Using machine learning to better interpert a useres request on alexa voice systems
+
+DATA
+
+Alexa uses data from a paticular users past data and from other users data in a given area or similar dialect.
+
+METHODS
+
+Alexa uses Natural language processing (NLP) to turn spoken word into something a machine can understand. 
+Alexa then uses the information to determine what action the user wants to take.
+by learning from previous interaction alexa uses machine learning to be better estimate what this action could be
+
+RESULTS
+
+Alexa continues to become smarter the more a user uses it learning certain characteristics of a persons voice through machine learning 
+
+COMMENTS
+
+Alexa is really intersting use for mmachine learning that can be seen plainly every day
+
+
+
+
+
+
+
+SOURCE
+
+https://www.searchenginejournal.com/adsense-machine-learning/272837/
+
+AGENT
+
+Google
+
+GOAL
+
+To help publishers serve the best advertisements to their site's visitors by equipping them with tools that allow them to make full use of Google's Machine Learning Technolgoy in order to individualize their users' experiences.
+
+DATA
+
+User on-site behaviour and cookies.
+
+METHODS
+
+The additional tools provided to site publishers are "powered by Google's Machine Learning technology", which is as proprietary as it sounds.
+
+RESULTS
+
+Varies by individual publisher usage of the technology.
+
+COMMENTS
+
+This may be an upgrade to the existing Machine Learning-based 'AutoAds' service, or may be a separate technology entirely.
+
+
+
+
+
+
+
+
+SOURCE
+
+https://www.wired.co.uk/article/how-do-netflixs-algorithms-work-machine-learning-helps-to-predict-what-viewers-will-like
+
+AGENT
+
+Netflix
+
+GOAL
+
+Optimize the recommendation system through machine learning algorithms.
+
+DATA
+
+While Netflix has over 100 million users worldwide, if the multiple user profiles for each subscriber are counted, this brings the total to around 250 million active profiles. "What we see from those profiles is the following kinds of data  what people watch, what they watch after, what they watch before, what they watched a year ago, what theyve watched recently and what time of day". This information is then combined with more data aimed at understanding the content of shows. The latter is gathered from dozens of in-house and freelance staff who watch every minute or every show on Netflix and tag it. The tags they use range massively from how cerebral the piece is, to whether it has an ensemble cast, is set in space, or stars a corrupt cop. The data that Netflix feeds into its algorithms can be broken down into two types  implicit and explicit. Explicit data is what you literally tell us: you give a thumbs up to The Crown, we get it, Yellin explains. "Implicit data is really behavioural data. You didn't explicitly tell us 'I liked Unbreakable Kimmy Schmidt', you just binged on it and watched it in two nights, so we understand that behaviourally. Most useful data is implicit."
+
+METHODS
+
+To illustrate how all this data comes together to help viewers find new things to watch, Netflix looked at the patterns that led viewers towards characters like the Marvel heroes that make up The Defenders. They take all these tags and the user behaviour data and then they use very sophisticated machine learning algorithms that figure out whats most important. The data scientists need to figure out how much to weigh certain behaviours of users in the algorithms.
+
+RESULTS
+
+While there were some more obvious trends, such as series with strong female leads  like Orange is the New Black  steering characters towards Jessica Jones, there were also a few less obvious sources, like the smart humour of Master of None and the psychological thrill of Making A Murderer driving people towards the wise-ass private detective. Meanwhile, "shows that expose the dark side of society" were shown to drive viewers to Luke Cage, such as the question of guilt in Amanda Knox and the examination of technology in Black Mirror.
+
+COMMENTS
+
+As a user of Netflix, I sometimes get overwhelmed by the amount of options for television and movies. It is good that they are trying to optimise our time spent on the app by recommending us movies based on our preferences. I think that should take more variables into account when running their algorithms, such as whether we completed a show or not.
+
+
+
+
+
+
+
+
+SOURCE
+
+https://www.learnopencv.com/understanding-alexnet/
+
+AGENT
+
+Alex Krizhevsky
+
+GOAL
+
+The objetive of this project was to make a software that can recognise objects analysing pictures.
+
+DATA
+
+It uses a pictures database, with the pictures stored following a CNN architecture.
+
+METHODS
+
+This system uses mainly Convolutional neural networks (CNN). It consist of 5 convolutional layers, followed by 3 fully connected layers.
+
+RESULTS
+
+The result of this project is a software that recognises very efficiently what objet is shown in a picture.
+
+COMMENTS
+
+This software can be use with some programmes as Matlab, to have a efficient computer vision system.
+
+
+
+
+
+
+
+SOURCE
+DeepFace, face recognition developed by Facebook.
+https://www.cs.toronto.edu/~ranzato/publications/taigman_cvpr14.pdf
+AGENT
+Yaniv Taigman.
+GOAL
+To be able to accurately recognise faces in images.
+DATA
+Millions of images uploaded by Facebook users were used to train the face recognition machine.
+METHODS
+Used a nine layer neural net with over 120 million connection weights, trained by the images they used.
+RESULTS
+It has become 95 percent accurate recognising faces in images.
+COMMENTS
+The application is a great idea however I find it to be creepy to see that they used images from Facebook users to train it, as well as being completely accurate in recognising faces. It was great to see that it was not rolled out to EU due to data privacy laws.
+
+
+
+
+
+
+
+SOURCE
+
+Stanford University https://www.sciencedaily.com/releases/2018/10/181001171210.htm
+
+AGENT
+
+Stanford University
+
+GOAL
+
+Finding a more cost-effective system for environmental regulators and to predict failing regulators.
+
+DATA
+
+Past inspections from different facilities.
+
+METHODS
+
+From the data, they created prediction models on facility characteristics.
+
+RESULTS
+
+As a result, it produced a risk factor or score on how likely a facility will fail the inspection.
+
+COMMENTS
+
+Although the idea seems great, it does go on to show that there is a flaw within the system. I am not sure how likely it will go onto production how damaging the flaw is to the system.
+
+
+
+
+
+
+
+SOURCE
+
+www.TechRepublic.com
+https://www.techrepublic.com/article/google-to-release-deepminds-streetlearn-for-teaching-machine-learning-agents-to-navigate-cities/
+
+AGENT
+
+Google Street Learn
+
+GOAL
+
+The goal of Google street learn is to navigate a around a city or area using only landmarks and points of intrest without GPS or refrence map
+
+DATA
+
+Using refrence images from google street view it crops 360-degree panoramic images each measuing 84x84 pixels.
+Each is a node in a larger netowrk of images 
+
+METHODS
+
+The system learns using deep reinforcement learning. a process that uses a series of multi-layered neural networks.
+Street Learn uses neural networks 
+
+One that handles image recognition, it feeds data to two Long Short Term Memory (LSTM) networks, allowing the system to consider contextual data.
+
+One of the LSTMs is a policy network that decides the action the agent should take next based on its current reward state,
+
+The other is a network that is tasked with memorising the local environment, 
+
+RESULTS
+
+The result was as expected. StreetLearn can learn to traverse most cities from photos without gps
+
+COMMENTS
+
+Street learn is a smart alternative to using gps but only in city or built up area as it would be uselss in areas without landmarks or points of interest 
+
+
+
+
+
+
+
+
+SOURCE
+
+https://algorithms-tour.stitchfix.com/ , https://www.zdnet.com/article/how-stitch-fix-uses-machine-learning-to-master-the-science-of-styling/
+
+AGENT
+
+Stitchfix, a personal, subscription based, online clothing sales company.
+
+GOAL
+
+Provide clients with clothes that match their personal preferences without them having spend time searching for clothes on their own.
+
+DATA
+
+Data is provided by clients both upfront when setting up their profile that tells Stitchfix certain details about the clothes they like and feedback on clothes that they are matched to. This data is also used with data given by designers at Stichfix who are able to give specific details about clothing items.
+
+METHODS
+
+After using algorithms with the explicit data given by customers and designers, Stitchfix also uses a neural network to look at the physical appearance of clothing customers have liked in the past and find similar items in the Stitchfix inventory.
+
+RESULTS
+
+It was stated by the chief algorithms officer at Stitchfix that these algorithms and more have resulted in increased customer satisfaction.
+
+COMMENTS
+
+I think that Stitchfix did the right thing to use machine learning algorithms due to the vast amount of data that is available to them as a business. 
+
+
+
+
+
+
+
+
+SOURCE
+
+Google's DeepMind
+
+AGENT
+
+DeepMind Technologies
+
+GOAL
+
+Create a machine that can mimic the thought processes of our brains
+
+DATA
+
+They test the system on video games, notably early arcade games, such as Space Invaders or Breakout
+
+METHODS
+
+Deep learning on a convolutional neural network, with a novel form of Q-learning, a form of model-free reinforcement learning
+
+RESULTS
+
+It has not been achieved yet
+
+COMMENTS	
+
+
+
+
+
+
+
+﻿SOURCE
+
+Technology Review "Deep Learning Machine Teaches Itself Chess in 72 Hours, Plays at International Master Level" https://www.technologyreview.com/s/541276/deep-learning-machine-teaches-itself-chess-in-72-hours-plays-at-international-master/
+
+AGENT
+
+Matthew Lai, Imperial College London
+
+GOAL
+
+Have a machine teach itself how to play and win games of chess.
+
+DATA
+
+175 million randomly generated valid chess positions.
+
+METHODS
+
+The neural network analyses the current game in three different ways: 1) It looks at the overall board, what pieces both players have and whose turn it is to move. 2)Looks at the individual pieces and their locations. 3) Each of the possible moves all of the pieces could take in both attacking and defending.
+
+RESULTS
+
+The project was a success, matching the top chess engines in the world (which have been built and fine tuned after years of data and experience) after 72 hours of learning and achieving a score of 9700 out of 15000. Unfortunately, the neural network isn't as fast as the other engines in coming to a decision, taking 10 times longer to decide a move.
+
+COMMENTS
+
+This was interesting as it showed how quickly a system supported by machine learning can catch up to or even exceed systems built with years of data and experience. I imagine over time as hardware and technology increases the neural network would be able to make faster decisions and neural networks will be the way to go to for being the best at chess.
+
+
+
+
+
+
+SOURCE
+Nature (https://www.nature.com/articles/d41586-018-06617-5)
+AGENT
+iris.ai
+GOAL
+Using a 300-to-500-word description of a researcher’s problem, or the URL of an existing paper, the service returns a map of thousands of matching documents, visually grouped by topic.
+DATA
+This service uses the CORE collection, a searchable database of more than 134 million open-access papers, as well as journals to which the user’s library provides access.
+METHODS
+The tool blends three algorithms to create ‘document fingerprints’ that reflect word-usage frequencies, which are then used to rank papers according to relevance.
+RESULTS
+The result is a map of related papers.
+COMMENTS
+New papers are published worldwide at a rate of 1 million each year so this tool is useful to find similar papers.
+
+
+
+
+
+
+
+SOURCE
+Classifying online Job Advertisements through Machine Learning
+https://www.sciencedirect.com/science/article/pii/S0167739X17321830
+AGENT
+Roberto Boselli, Mirko Cesarini, Fabio Mercorio, Mario Mezzanzanica
+GOAL
+Reduce the time-to-market compared to classical survey-based analyses, overcoming linguistic boundaries, and representing the resulting knowledge over several sectors at different levels of granularity.
+DATA
+Web job vacancy document containing a title and full job description.
+METHODS
+Used machine learning techniques such as Support Vector Machines, SVM Linear, SVM RBF Kernel, Random Forests, Artificial Neural Networks.
+RESULTS
+Successfully analysed different Web job vacancies into their own classification, which are, Geographical, Area, Skill, Firm, and Occupation.
+COMMENTS
+
+
+
+
+
+
+
+
+SOURCE
+
+MarI/O - Machine Learning for Video Games - https://www.youtube.com/watch?v=qv6UVOQ0F44
+
+AGENT
+
+MarI/O
+
+GOAL
+
+To finish a stage of Mario
+
+DATA
+
+Stage map was drawn where white squares were used to identify the stationary objects like the road and black squares were used for movable objects. Also a fitness score was assigned for the distance Mario reaches in the stage.
+
+METHODS
+
+Neural networks and Genetic algorithm was used. NEAT - Neuro Evolution of Augmenting Topologies.
+
+RESULTS
+
+The stage was completed after 34 tries.
+
+COMMENTS
+
+The computer was able to easily identify the solution to the stage by trying to maximise the fitness score. At 1st generation, it just used to stand at the start but as it started moving right, causing increase in fitness score, did it came to know the end result.
+
+
+
+
+
+
+
+
+SOURCE
+
+https://medium.com/s/story/spotifys-discover-weekly-how-machine-learning-finds-your-new-music-19a41ab76efe
+
+AGENT
+
+Spotify
+
+GOAL
+
+Create "discover weekly" : a playlist of songs based on the preferences of the user.
+
+DATA
+
+The favorite musics of the user (corresponding at the song saved) and also the songs of the people related to the user (friend, music in common...).
+
+METHODS
+
+Collaborative filtering, depending of what you like and what other people like you have listened, you will be advised some songs.
+Natural language processing to get songs close to one you listen to. 
+Raw audio model to compare the spectrum of the songs the user likes to suggest him new songs only based on the spectrum, it helps the inclusion in new songs in this playlist.
+
+RESULTS
+
+The user can take advantage of this playlist to discover new songs based on his taste.
+
+COMMENTS
+
+
+
+
+
+
+
+Coca-Cola  
+
+SOURCE
+https://www.bernardmarr.com/default.asp?contentID=1280
+
+AGENT
+Self-service drinks machines where customers could freely mix their own drinks.
+
+GOAL
+Create a new flavour of drink to manufacture that is guaranteed to sell.
+
+DATA
+Hundreds of thousands of customers using the machine to customise a huge array of drink combinations.
+
+METHODS
+Machine learning
+
+RESULTS
+Cherry Sprite was found to be the drink created most at these machines and so they manuactured it as a new flavour.
+
+COMMENTS
+I think the AI drink machines will be a great way to get people to interact more with their brand if they go forward with their plans.
+
+
+
+
+
+
+
+SOURCE
+
+https://www.askforgametask.com/tutorial/machine-learning-algorithm-flappy-bird/
+
+AGENT
+
+Arthur Samuel
+ 
+GOAL
+
+To achieve an artificial intelligence which can find a proper solution from a bad system by fine tuning model parameters.
+
+DATA
+
+The main approach of machine learning algorithm (ML) is based on the NeuroEvolution (or neuro-evolution). This form of machine learning uses evolutionary algorithms such as a genetic algorithm (GA) to train artificial neural networks (ANN).
+
+So for this example, we can say ML = GA + ANN.
+
+METHODS
+
+Uses Machine Learning Genetic Algorithm which is used to train and improve neural networks. Genetic algorithm is a search-based optimization technique inspired by the process of natural selection and genetics. It uses the same combination of selection, crossover and mutation to evolve initial random population.
+
+RESULTS
+
+we have successfully implemented AI robot for learning how to play the Flappy Bird game. As a result of several iterations, we can get an almost invincible player.
+
+COMMENTS
+
+I believe the neurons in hidden layer could be changed further ahead. Furthermore, changing some physical parameters such as the distance between barriers, gravity would give the game a different feel.
+
+
+
+
+
+
+
+
+SOURCE
+
+ CIO From IDG (https://www.cio.com/article/3225445/artificial-intelligence/machine-learning-success-stories.html)
+
+AGENT
+
+ Paul Daugherty
+
+GOAL
+
+ To Create an ML-Fueled app that can scan and predicts how fast an employee’s job will be irrelevant. 
+
+DATA
+ The app take the resume and other available data of the employees.
+
+
+METHODS
+
+ The app takes an employee's job experiences and assigns a risk score for their roles potential irrelevance.  For example, the app will consider the risk score and gives how the employee's skills will be dated in 18 months.
+
+
+RESULTS
+
+ The app takes into account an employee’s collective work experience and recommends adjacent skills they may wish to pick up to remain more relevant at the company
+
+COMMENTS
+
+ This app is very useful for the filtering the resources based on the growing technology and its predict how the user skills will be varying in the future.
+
+
+
+
+
+
+
+
+SOURCE
+The Hub at John Hopkins (https://hub.jhu.edu/2018/10/04/algorithm-predicts-patient-no-shows/)
+AGENT
+John Hopkins University
+GOAL
+Predict what patients won't show up for their scheduled medical appointments.
+DATA
+The model uses various details of the patients such as demographics, economic status, medical history, etc.
+METHODS
+The model takes various predictors into account—demographics, economic status, medical history, etc.—and calculates a probability "no-show score" for each patient.
+RESULTS
+This has allowed the clinic to add over 70 pediatric appointments to their schedule per week, improving outpatient access for more children while also reducing the no-show rate 16 percent for patients who are highly likely to miss scheduled appointments.
+COMMENTS
+No comments.
+
+
+
+
+
+
+
+SOURCE
+
+https://www.technologyreview.com/s/611281/a-machine-has-figured-out-rubiks-cube-all-by-itself/?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more 
+
+AGENT
+
+Rubix cube 
+
+GOAL
+
+Solve a rubix cube DATAAll possible configurations of a rubix cube 
+
+METHODS
+
+Search Tree ResultsMachnine learning has allowed a machine to solve a rubix cube no matter what configuration 
+
+COMMENTS
+
+step forward in the issue of how to make computers solve problems with minimal help. In order to craft this solution the system was given the solution of what the solved cube looked like along with a list of all possible configurations of the rubix cube, and the starting configuration of the scrambled cube. From its first move the cube navigates through the search tree containing each configuration and determines whether the move that is made is closer to the solution than the previous state. This determination decides whether the machine is rewarded for the move or not.
+
+
+
+
+
+
+SOURCE
+
+https://www.datanami.com/2014/07/17/inside-sibyl-googles-massively-parallel-machine-learning-platform/
+
+AGENT
+
+Google
+
+GOAL
+
+A proprietary platform for massively parallel machine learning used internally by Google to make predictions about user behavior and provide recommendations
+
+DATA
+
+Hundreds of millions (if not billions) of users around the planet, and remembers (via extensive logging) what screens it shows them and what they did on those screens. For each application, there could be hundreds of different features that needed to be tracked.
+
+METHODS
+
+Google wanted to use standard software components wherever possible. That's where MapReduce and the distributed Google File System (GFS) come into play.
+On top of this base of MapReduce and GFS, Google applied the Parallel Boosting Algorithm developed in 2001 by Michael Collins, Robert E. Schapire, and Yoram Singer. We use algorithms that have been well proven in the literature, Chandra says. Parallel boosting is particularly well-suited for some of our requirements.
+We start with an approximate solution and approximate model, Chandra says. That model could be really bad. Then we feed the model and all the training data in. At the end of the iteration, the algorithm is guaranteed to produce a better model. So if you keep iterating, the model gets better and better and better.
+
+RESULTS
+
+Sibyl runs quite well on Google's high-RAM, multi-core servers. The system is running constantly, day and night. It takes roughly 10 to 50 cycles to generate a recommendation that Google is happy with.
+
+COMMENTS
+
+While there's no indication that Google is going to share Sibyl via open source, there's nothing stopping others from assembling their own Sibyls using the open source components that went into the machine learning platform, or using other commonly available machine learning packages.
+
+
+
+
+
+
+SOURCE
+The Guradian (https://www.theguardian.com/technology/2016/jul/05/google-deepmind-nhs-machine-learning-blindness)
+AGENT
+Google DeepMind
+GOAL
+Goal is to train a neural network to identify early signs of degenerative eye conditions.
+DATA
+They used approximately 1m anonymous digital eye scans, along with some related anonymous information about eye condition and disease management.
+METHODS
+The method used in this project was deep learning.
+RESULTS
+No results mentioned.
+COMMENTS
+No comments.
+
+
+
+
+
+
+SOURCE 
+
+https://deepmind.com/blog/neural-scene-representation-and-rendering/?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more
+
+AGENT 
+
+Danilo Jimenez Rezende
+Ali Eslami
+
+GOAL 
+
+Attempt to re-create a 3D environment using neural rendering using various 2D images, and compare how faithful the neural render is to the original design, from which the 2D images are created.
+
+DATA 
+
+Data was created from various human made 3D environments and objects, from which 2D images are taken.
+
+METHODS 
+
+They used a Generative Query Network (GQN), a framework which allows for a neural network to understand 3D environments from 2D images, and allows for them to attempt to emulate what a 3D environment and object is from one or more 2D images
+
+RESULTS 
+
+With some learning, the neural network was able to more and more accurately recreate 3D environments and objects. This was more and more impressive to the agents the more complicated the tests were made.
+
+COMMENTS 
+
+This would be a huge cornerstone to the area’s of automated cars, where they would need to be able to recreate their area’s to detect objects, dangers and where to drive.
+
+
+
+
+
+
+
+SOURCE
+
+http://geoawesomeness.com/google-maps-machine-learning-parking/
+
+AGENT
+
+- Google
+
+GOAL
+
+Google wanted to reduce the amount of time that users of Google Maps spend on searching for a parking space. 
+
+DATA
+
+Researchers at Google studied the historical parking data and collected ground truth inputs from over 100,000 people, asking questions about how long it took each respondent to find parking. They also used anonymous aggregated information from users who opted to share the location data to create training models. 
+
+METHODS
+
+Google used location data of users to create training models. For example, if a person keeps walking around in a circle around their proposed destination, then that might indicate that they are struggling to find an available parking space. Based on the dispersion of parking locations, Google used standard logistic regression models to leverage the features and predict how difficult finding an empty spot would be at any given time. 
+
+RESULTS
+
+There is now a parking difficulty icon on Google Maps. The feature only rolled out on Android devices. Google introduced a difficulty icon feature for 25 cities in the US, and another 25 worldwide. 
+
+COMMENTS
+
+On Google Maps, the 'Time to reach destination' is more often than not quite unrealistic due to there being a lack of consideration for the factor of traffic. This is especially true is more densely populated cities. 
+
+
+
+
+
+
+SOURCE
+
+ CIO From IDG (https://www.cio.com/article/3225445/artificial-intelligence/machine-learning-success-stories.html)
+
+AGENT
+
+ Rich Hillebrecht
+
+GOAL
+
+ To apply machine learning techniques to process more data than we normally use. They use historical data to predict the future. 
+
+DATA
+
+ They combine order management and other ERP data with historical data about weather and other factors to find a pattern.
+
+METHODS
+
+ They will use the ML to tune automatically with the above and predict the future. "We want to be more predictive in terms of downstream risk in terms of capacity and our ability to fill orders to customers," Hillebrecht says.
+
+RESULTS
+
+ As the system designed they predicts the future data more precise.
+
+COMMENTS
+
+ The method they use might be well known and most used method but the datasets they use is much bigger so their solution and prediction will be better than others.
+
+
+
+
+
+
+##4. Volvo  
+
+SOURCE
+https://www.bernardmarr.com/default.asp?contentID=692
+
+AGENT
+Computers at Volvo which is sent data from the cars.
+
+GOAL
+Predict when a car part might malfunction or break, and predict when a service is next due.
+
+DATA
+Information collected from the cars as they are being used.
+
+METHODS
+Machine learning
+
+RESULTS
+This has already been used to allow cars to detect driving conditions and allows Volvo to uphold a very high safety standard.
+
+COMMENTS
+This will add greatly to customer trust in the brand and customer satisfaction levels.
+
+
+
+
+
+
+SOURCE
+
+https://ai.googleblog.com/2017/05/updating-google-maps-with-deep-learning.html
+
+AGENT
+
+Google
+
+GOAL
+
+To use their deep learning algorithms to help the app extract street names and house numbers from photos taken by Street View cars and increase the accuracy of search results.
+
+DATA
+
+In 2014, Googles Ground Truth team published a state-of-the-art method for reading street numbers on the Street View House Numbers (SVHN) dataset, Google created and released French Street Name Signs (FSNS), a large training dataset of more than 1 million street names. The FSNS dataset was a multi-year effort designed to allow anyone to improve their OCR models on a challenging and real use case. FSNS dataset is much larger and more challenging than SVHN in that accurate recognition of street signs may require combining information from many different images.
+
+METHODS
+
+With this training set, Google intern Zbigniew Wojna spent the summer of 2016 developing a deep learning model architecture to automatically label new Street View imagery. One of the interesting strengths of their new model is that it can normalize the text to be consistent with their naming conventions, as well as ignore extraneous text, directly from the data itself. Applying large models across their more than 80 billion Street View images requires a lot of computing power. Therefore, the Ground Truth team was the first user of Google's TPUs, which were publicly announced earlier this year, to drastically reduce the computational cost of the inferences of our pipeline.
+
+RESULTS
+
+While this model is accurate, it did show a sequence error rate of 15.8%. However, after analysing failure cases, they found that 48% of them were due to ground truth errors, highlighting the fact that this model is on par with the label quality.
+
+COMMENTS
+
+This technology is so important because so many people rely on Google maps for navigation. Google must come up with new machine learning methods to keep Google Maps up to date with the always changing landscape of cities.
+
+
+
+
+
+
+SOURCE
+
+https://arxiv.org/pdf/1805.07470.pdf
+
+AGENT
+
+Stephen McAleer, Forest Agostinelli, Alexander Shmakov and Pierre Baldi
+
+GOAL
+
+To come up with an algorithm to evaluate the turns of a Rubik's Cube and to solve it with the minimal amount of moves 100% of the time using a concept called Autodidactic Iteration.
+
+DATA
+
+The researchers trained their model using ADI which is an iterative supervised learning procedure which trains a deep neural network f?(s) with parameters ? which takes an input state s and outputs a value and policy pair (v, p). The policy output p is a vector containing the move probabilities for each of the 12 possible moves from that state.
+
+METHODS
+
+Autodidactic iteration in basic terms solves the cube by starting with the finished cube and working backwards to find a configuration that is similar to the proposed move. This process is not perfect, but deep learning helps the system figure out which moves are generally better than others. Having been trained, the network then uses a standard search tree to hunt for suggested moves for each configuration.
+
+RESULTS
+
+As a baseline, they compared it to previously known solvers, Kociemba and Korf. Kociemba will always solve any cube given to
+it, and it runs very quickly. However, because of its general-purpose nature, it often finds a longer solution compared to the other solvers. Korfs algorithm will always find the optimal solution from any given starting state; but, since it is a heuristic tree search, it will often have to explore many different states and it will take a long time to compute a solution. Both DeepCube and Kociemba solved all 640 cubes within one hour. Kociemba solved each cube in under a second, while DeepCube had a median solve time of 10 minutes. The systematic approach of Kociemba explains its low spread of solution lengths with an interquartile range of only 3. Although DeepCube has a much higher variance in solution length, it was able to match or beat Kociemba in 55% of cases.
+
+
+COMMENTS
+
+
+
+
+
+
+
+
+
+
+﻿SOURCE
+
+Symmetry Magazine "Machine learning proliferates in particle physics" https://www.symmetrymagazine.org/article/machine-learning-proliferates-in-particle-physics
+
+AGENT
+
+Large Hadron Collider
+
+GOAL
+
+Filter out irrelevant data and quickly what data needs to be looked at.
+
+DATA
+
+A million gigabytes of data every second before compression. After compression, the data for one hour is equivalent to Facebook's data collection in a year.
+
+METHODS
+
+Scan data in real time using "triggers". These triggers are a combination of software and hardware used to identify which data to keep in real time.
+
+RESULTS
+
+The neural networks have learned how to identify relevant data and analyse it by itself. As hardware and algorithms improved, so has the neural networks going from a few layers deep to thousands of layers deep.
+
+COMMENTS
+
+I found the final quote in the article to be very though provoking. It's an interesting idea, nowadays we use machine learning to come up with the answers to our questions, perhaps in a decade we'll use machine learning to come up with the questions we would never think of even asking. I also found it amazing that the neural network could not only manage so much data but could also analyse it and compare it to previous data.
+
+
+
+
+
+
+
+SOURCE
+
+https://engineeringblog.yelp.com/2015/10/how-we-use-deep-learning-to-classify-business-photos-at-yelp.html
+
+AGENT
+
+Yelp
+
+GOAL
+
+Classify pictures of restaurants into five categories. These categories are food, drink, inside, outside, and menu.
+
+DATA
+
+Pictures with obvious captions, pictures that users have given certain attributes to, and specific pictures taken just for more data.
+
+METHODS
+
+Used a convolution neural network based on an open source framework called Caffe. They wrapped this convolution neural network using the container platform Docker.
+
+RESULTS
+
+Precision of 94 percent and recall of 70 percent on a data set of 2500 pictures. Yelp is able to use this for cover photo diversification and tabbed photo browsing.
+
+COMMENTS
+
+Users are able to report pictures if they are placed in the wrong category, allowing the algorithms to improve over time. Also, I was surprised to see a company like Yelp using open source material.
+
+
+
+
+
+
+
+
+SOURCE
+
+ CIO From IDG (https://www.cio.com/article/3225445/artificial-intelligence/machine-learning-success-stories.html)
+
+AGENT
+
+ Sunil Bondalapati
+
+GOAL
+
+ To predict the machine failure in the real time and replace them before the system fails to work.
+
+DATA
+
+ In real time, the data will be taken from the machine such as supply chain data, IoT data, power capacity and other work flow data.
+
+METHODS
+
+ With the help of all the above data, the system will start understanding how the system is used and about its wear and tear. Based the study of the data in the real time the system predicts the when that machine fails to work. 
+
+RESULTS
+
+ This system predicts the Machine failure in the before hand with lots of accuracy and the Spark-based software transforms the data and provides insights for IT and business staff alike
+
+COMMENTS
+
+ This product is very useful for the companies where there are lot machines involved. According to me they should consider the external factors too in this prediction (like voltage fluctuation, maintenance of the machine etc.)
+
+
+
+
+
+
+
+SOURCE
+
+https://paul-daugherty.com/2018/06/07/medium-funnel-ai-machine-learning-for-investigative-journalism-and-business/
+
+AGENT
+
+Paul Daugherty
+
+GOAL
+
+Helping reporters analyze data and brainstorm story ideas.
+
+DATA
+
+FunnelAI uses natural language processing, a branch of machine learning, in order to connect businesses to their customers. Our advanced algorithms help companies and teams to maximize their uniquely human skills by providing them with the customers who have the intent to purchase their product.
+
+METHODS
+
+FunnelAI has a similar approach to using machine learning. Like Reuters, we leverage technology to allow companies to focus on their uniquely human capabilities. We empower our users to creatively use their marketing and sales resources to reach out to their customers in real time.
+
+RESULTS
+
+FunnelAI will help augment human capabilities by completing tasks and collecting data that improves productivity. 
+
+COMMENTS
+
+Implementing Funnel AI was really a great achievement and could also say that it gives humans super-powers.
+
+
+
+
+
+
+
+
+SOURCE 
+
+https://towardsdatascience.com/going-dutch-how-i-used-data-science-and-machine-learning-to-find-an-apartment-in-amsterdam-part-def30d6799e4
+
+AGENT 
+
+Rafael Pierre
+
+GOAL 
+
+Attempt to use openly available data of rent prices and apartments within Amsterdam to be able to find a “perfect” place to live, especially in an area where the prices fluctuate vastly.
+
+DATA 
+
+Data was collected from various rental websites, using the latest rental prices, locations and room sizes.
+
+METHODS 
+
+They used Predictive Analysis, which allows the end user to predict the rental prices, and allows to visualize how much value the rental price for a particular apartment gives.
+
+RESULTS 
+
+With enough testing, the agent was able to create a visual representation of where the best value for the rent price was able to be found in various districts within Amsterdam.
+
+COMMENTS 
+
+This is very relevant in cities, where rent prices are not only volatile, they can range from cheap to very expensive, even if the rent space is small. This would be very useful in a usage case such as Dublin where not only the rent price delta is large, there is a huge pool of people for a small rental pool.
+
+
+
+
+
+
+SOURCE
+
+https://ai.googleblog.com/2017/05/updating-google-maps-with-deep-learning.html
+
+AGENT
+
+Google
+
+GOAL
+
+Improve streetmaps
+
+DATA
+
+Google analytics
+
+METHODS
+
+deep learning
+
+RESULTS
+
+improved google maps
+
+COMMENTS
+
+n/a
+
+
+
+
+
+
+
+SOURCE 
+
+https://blog.openai.com/openai-five/?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more
+
+AGENT 
+
+OpenAI
+
+GOAL 
+
+Teaching and training an AI to play a game (Dota 2) to beat or be competitive against a human team of various skill levels and professional levels.
+
+DATA 
+
+Data was collected from gameplay of real humans at various levels, and co-currently using Microsoft Azure and GCP resources.
+
+METHODS 
+
+They used Proximal Policy Optimization, a proprietary method of learning which is able to be scaled to very large heights (10,000’s of CPU cores). This allowed the system to process extremely large amounts of information in terms of game footage (which allowed the AI to process 100’s of years of footage per day)
+
+RESULTS 
+
+With enough training, the AI was able to begin beating bot players using traditional Heuristics, and using enough time was able to start beating human players
+
+COMMENTS 
+
+While the technology is now here perse, it still takes a long time to develop an AI smart enough to be able to play a game against humans. It also takes a lot of computer power to train the AI to do something as abstract as play a game, which will mean that AI in games will still be largely based on Heuristics.
+
+
+
+
+
+
+
+
+SOURCE
+
+www.newatlas.com
+https://newatlas.com/fake-news-machine-learning-mit/56652/
+
+AGENT
+
+Rich Haridy
+
+GOAL
+
+develop a new machine learning system designed to evaluate individual articles and entire news sources to evaluate acuarrcy of news sources
+
+DATA
+
+The data is taken from a source called Media Bias/Fact Check (MBFC), An independent, non-partisan resource. On topn of this the progarm also took articals from other new sources to test agaisnt 
+
+METHODS
+
+The first part of the algorithim would scan articles from MBFC it would learn what a biasd news articals would have in common and judge how accurate they were
+the second part would then look at other articals from various news source and determine whether or not they contained any bias.
+it would examine individual articles using 141 different values to classify accuracy and bias. These include linguistic features such as hyperbolic or subjective language, and lexicon classifiers that signify bias or complexity.
+
+RESULTS
+
+It would need only 150 articals to determine from a given source in order to detect a rliable acuarrcy and bias. 
+It would the categoris it based on accuarcy and political bias. The algorithim has 65 percent accurate in detecting factual accuracy and 70 percent accurate at detecting political bias
+
+COMMENTS
+
+The algorithim is still in development but seems to be promising for future development
+
+
+
+
+
+
+
+
+SOURCE
+
+https://medium.com/ibm-watson/check-out-whats-new-with-watson-studio-93a31f173245
+
+AGENT
+
+IBM
+
+GOAL
+
+Improve Watson's capabilities
+
+DATA
+
+Multiple data points
+
+METHODS
+
+multiple
+
+RESULTS
+
+Many accomplishments and breakthroughs in the field in general
+
+COMMENTS
+
+Article isn't particularly specific
+
+
+
+
+
+
+
+
+﻿SOURCE
+
+MarI/O - Machine Learning for Video Games https://www.youtube.com/watch?v=qv6UVOQ0F44
+
+AGENT
+
+SethBling
+
+GOAL
+
+Have a computer teach itself how to beat a specific level in Super Mario World.
+
+DATA
+
+Repeated attempts at beating a level with feedback given from the game. Data in the game such as walkable platforms, location of the playable character and locations of enemies.
+
+METHODS
+
+Creating a neural network which reward getting as far right as possible in a run without the playable character dying. Runs that lead to the longest distance travelled were moved into future generations and bad runs were discarded.
+
+RESULTS
+
+The computer initially was completely unaware of how to play the game, starting off without knowing that movement is required. Over time the computer learned how to move, then how to jump, how to avoid enemies and pitfalls and the computer learned more advanced techniques such as spin jumping.
+
+COMMENTS
+
+I found this video very interesting. I liked how it showed using lines how the neural network was forming as it learned what buttons were a good idea to press and what buttons were bad in a given situation in the game. However I feel like the algorithm this neural network creates is strong at this specific level and it may be weak when placed into a different level or a level with different enemy types or physics rules.
+
+
+
+
+
+
+
+
+SOURCE
+
+https://orizon.immo/be/ http://www.influencia.net/fr/actualites/media-com,audace,orizon-agence-immobiliere-qui-specule-sur-rechauffement-climatique,7885.html
+
+AGENT
+
+Artefact coordinated by Greenpeace France
+
+GOAL
+
+The first goal of the website "Orizon" is to predict the cost of the houses on the France and Belgium sea coasts in a century given the fact that the sea level will increase.
+The second goal is to increase environment awareness, saying that to help your descendant in a century, you must be starting by taking care of the planet.
+
+DATA
+
+Real estate announces, topologic map of France/Belgium given by the NASA with an increase of the sea level by 1 meter corresponding of the estimation given by the report GIEC in 2014 used during CO21.
+
+METHODS
+
+Supervised machine learning with features as surface, square meters, city square meters but also new feature like the distance to sea in 2100.
+
+RESULTS
+
+The result must be measured not by the correct price estimation but by the number of people targeted by this website.
+I don't have any number but in my opinion this is a great marketing ploy.
+
+COMMENTS
+
+The website main focus isn't about machine learning but it is always interesting to see how this field was used to attract and aware people.
+
+
+
+
+
+
+
+
+Source: 
+
+https://towardsdatascience.com/using-deep-learning-to-improve-fifa-18-graphics-529ec44ea37e
+
+Agent: 
+
+Chintan Trivedi
+
+Goal: 
+
+Use deep learning to improve the facial graphics in the game FIFA 18
+
+Data: 
+
+data is gathered by recording in game footage and a load of images from Google of the players.
+
+Method: 
+
+Using different model architechture and different deep learning algorithms.
+
+Results: 
+
+There is a clear inprovement in the faces of the players that are used. It is even possble to self insert your own face into the game.
+
+Comments: 
+
+As the author mentions that he himself has little graphical experiance I wonder along with him why it isn't feasable for game developers to use a deep learning method to improve at the very least facial graphics in games if not the entire graphical world.
+
+
+
+
+
+
+
+SOURCE
+
+https://eng.uber.com/michelangelo/
+
+AGENT
+
+Uber
+
+GOAL
+
+Goal of Michelangelo: enables internal teams to seamlessly build, deploy, and operate machine learning solutions at Ubers scale. It is designed to cover the end-to-end ML workflow: manage data, train, evaluate, and deploy models, make predictions, and monitor predictions. The system also supports traditional ML models, time series forecasting, and deep learning.
+
+DATA
+
+Uber currently support offline, large-scale distributed training of decision trees, linear and logistic models, unsupervised models (k-means), time series models, and deep neural networks. They regularly add new algorithms in response to customer need and as they are developed by Ubers AI Labs and other internal researchers. In addition, they let customer teams add their own model types by providing custom training, evaluation, and serving code. The distributed model training system scales up to handle billions of samples and down to small datasets for quick iterations.
+
+METHODS
+
+Models are often trained as part of a methodical exploration process to identify the set of features, algorithms, and hyper-parameters that create the best model for their problem. Before arriving at the ideal model for a given use case, it is not uncommon to train hundreds of models that do not make the cut. Though not ultimately used in production, the performance of these models guides engineers towards the model configuration that results in the best model performance. Keeping track of these trained models (e.g. who trained them and when, on what data set, with which hyper-parameters, etc.), evaluating them, and comparing them to each other are typically big challenges when dealing with so many models and present opportunities for the platform to add a lot of value.
+
+RESULTS
+
+Due to the success of the platform, in the coming months, they plan to continue scaling and hardening the existing system to support both the growth of their set of customer teams and Ubers business overall. As the platform layers mature, they plan to invest in higher level tools and services to drive democratization of machine learning and better support the needs of their business.
+
+COMMENTS
+
+This project will surely pave the way for future machine learning projects. The platform provides many things that are needed when working on machine learning projects, and wraps it in a slick UI.
+
+
+
+
+
+
+
+
+
+SOURCE 
+
+https://ai.googleblog.com/2018/05/duplex-ai-system-for-natural-conversation.html?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more
+
+AGENT 
+
+Google duplex
+ 	 	
+GOAL 
+
+To create a machine that could have a real world conversation and use it as a personal assistant that can speak to humans using colloquial language and nuances over the phone. 
+	
+DATA 
+
+The machine was trained on an enormous amount of phone call conversation data. Different tasks were trained separately and phone calls doing different specific tasks were used when training the machine for the task in question.
+
+METHODS 
+
+It uses a recurrent neural network built with TensorFlow Extended
+
+RESULTS 
+
+While google duplex is not in the mainstream currently, it has been shown in demonstrations to be amazing at understanding the human language over phone calls through showcases of it booking appointments, tables for restaurants and much more. Overall google duplex produced a machine that can emulate human phone interaction almost seamlessly.
+
+COMMENTS 
+
+Google duplex comes with many benefits, saving people and businesses time. It also is very helpful for those with disabilities. The only issues people may have with google duplex is that it can possible takeover phone jobs as the technology improves it does not need training or a wage.
+
+
+
+
+
+
+
+SOURCE
+
+https://litmus.com/blog/google-smart-reply-how-it-works
+https://www.dailyherald.com/business/20170527/how-gmail-apps-new-smart-reply-feature-works
+
+AGENT
+
+- Greg Corrado
+- Balint Miklos
+
+GOAL
+
+The team for the Smart Reply Function (Gmail) at Google wanted to suggest or predict phrases to use when replying to an email you just received in your inbox. It works like predictive text for all emails in your inbox. 
+
+DATA
+
+The data used to predict responses is the incoming email itself. From this, the algorithm learns by itself through the second network. It also accumulates data on your email writing style. For instance, if you prefer saying 'Thank you' instead of 'Thanks', then the machine learning algorithm will implement this as a feature. 
+
+METHODS
+
+The system works by connecting a pair of recurrent neural networks, one used to encode an incoming email, while the other would be used to predict responses. The encoding network takes in the words of the incoming email, and produces a vector. The vector retains the intent of the sentence while not giving full regard to the diction. The second vector works off this original vector and synthesizes a grammatically correct response. The operation of each network is entirely learned. This is done by training the model to predict likely responses. The question arises as to how to write a response that is longer than a sentence long. The team at Google decided to use a variant of a long-term-short-term memory network. This way, they could preserve long-term dependencies and focus only on the part of the email that is most relevant for predicting a response. 
+
+RESULTS
+
+The results found indicated that the function was a great success for Google but is still quite new. It was released in 2015 and in 2016, 10% of users' emails were sent using the tool. It proves that predictive text is getting so strong, that it now understands context within emails. 
+
+COMMENTS
+
+It is debated whether or not this smart reply function has more benefits than it does downfalls. In an area such as customer service and sales, an area primarily maintained by humans, it is hard to imagine how a customer would enjoy the service provided by a machine. 
+
+
+
+
+
+SOURCE
+
+https://www.tomshardware.com/news/amd-xilinx-machine-learning-inference-record,37885.html
+
+AGENT
+
+AMD and Xilinx
+
+GOAL
+
+To create high-performance inference systems for data centers.
+
+DATA
+
+Various.
+
+METHODS
+
+The data centers that includes a 32-core EPYC 7551 CPU and eight Alveo U250 accelerator cards. The cards will be powered by Xilinx’s ML Suite, which also supports ML software frameworks, such as TensorFlow. Xilinx also introduced two new FPGA cards (Alveo U200 and U250), which for the first time are optimized to “accelerate” real-time machine learning inference.
+
+RESULTS
+
+Breaking of the world record for inference performance.
+
+COMMENTS
+
+N/A.
+
+
+
+
+
+
+SOURCE
+
+https://deepmind.com/research/alphago/ https://storage.googleapis.com/deepmind-media/alphago/AlphaGoNaturePaper.pdf
+
+AGENT
+
+Google DeepMind
+
+GOAL
+
+Create an AI able to beat the best human go players.
+
+DATA
+
+Thousands of game of Go were used as an input.
+
+METHODS
+
+Several methods were used : Monte Carlo Tree Search, a "policy" neural network to select the next move and a "value" neural network to evaluate the position.
+On top of that, supervised and reinforcement learning were used to train the "policy" neural network, whereas, reinforcement learning was used to train the "value network".
+
+RESULTS
+
+AlphaGo beat a former European champion of Go, Mr Fan Hui by a flawless score of 5-0 in October 2015.
+In March 2016, he defeated Lee Sedol, the world champion of Go, considered as one of the best players in the history, by the score of 4-1, in front of 200 millions people.
+
+COMMENTS
+
+After the victory of DeepBlue against Kasparov in 1997, many people trusted that the human Go players would stay untouched for at least the next thirty years because of the wider possibility of moves you can have in Go compered to Chess.
+However, AlphaGo against the odds, managed to win against the Go world champion in only 2016. Go players appreciated some AlphaGo moves as totally new and it allowed them to introduce new moves and new strategies based on AlphaGo reasoning.  
+
+
+
+
+
+
+SOURCE
+
+http://science.sciencemag.org/content/early/2017/03/01/science.aam6960
+
+AGENT
+
+Matej Moravčík
+Martin Schmid 
+Neil Burch
+Viliam Lisý
+Dustin Morrill
+Nolan Bard
+Trevor Davis
+Kevin Waugh
+Michael Johanson
+Michael Bowling
+(Alumni associated with University of Alberta)
+
+GOAL
+
+The team behind DeepStack wanted to surpass the recent milestones of artificial intelligence in games, and mark the first time that anyone has ever solved a game with imperfect information, unlike games like Go and Chess. 
+
+DATA
+
+The data provided to the DeepStack algortithm can be categorised into states, namely the public state (Community cards on table which everyone can see) and the private information state (Two private cards for each player). Besides this data, there is a sequence of betting actions made by the players previous to the current hand at play. 
+
+METHODS
+
+The DeepStack algorithm is focused on assembling the most appropriate information for imperfect information games such as poker. It combines relevant reasoning to handle the information asymmetry problem between players. The form of intuition used by DeepStack is learned from self-play. The correct decision at a particular moment depends upon the probability distribution over private information that the opponent holds. This is revealed through their pas actions. The Counterfactual minimisation algorithm uses self-play to adapt its strategy against itself over successive iterations. The DeepStack algorithm is essentially composed of three parts: a sound local strategy computation for the current public state within the 'public tree', depth-limited lookahead, and a restricted set of lookahead actions. Sparse lookahead trees are built to reduce the number of actions considered.
+
+RESULTS
+
+DeepStack defeated professional poker players in no-limit Texas hold'em with 'Statistical significance'. The approach is said to be theoretically sound. There were other approaches taken by several other organisations but DeepStack is said to produce strategies which are more difficult to exploit. The DeepStack algorithm tries to solve for a Nash Equilibirum such that the best an opponent can do against the AI is to tie. 
+
+COMMENTS
+
+The computational power was an issue for some time. Games like Limit Poker proved easier to be 'Weakly solved' but not much could be said for 'No-limit'. 
+
+
+
+
+
+
+
+SOURCE
+
+https://www.bernardmarr.com/default.asp?contentID=1090
+
+AGENT
+
+Google deepmind
+
+GOAL
+
+spot early signs which may indicate the onset of degenerative eye conditions
+
+DATA
+
+1 million images of eye scans
+
+METHODS
+
+simulated neural network
+
+RESULTS
+
+help London's moorfield eye hospital in their work
+
+COMMENTS
+
+One of many projects deepmind is undergoing
+
+
+
+
+
+
+
+Source:
+
+Statt, N. (2018, May, 10th), "Google now says controversial AI voice calling system will identify itself to humans", https://www.theverge.com/2018/5/10/17342414/google-duplex-ai-assistant-voice-calling-identify-itself-update
+(2018, May, 11th), "Google's AI phone calling software will not pretend to be human", https://www.irishnews.com/magazine/technology/2018/05/11/news/google-s-ai-phone-calling-software-will-not-pretend-to-be-human-1327681/
+
+Agent:
+
+Google Duplex
+
+Goal:
+
+The purpose behind Google Duplex was to perform an inquiry and/or booking for multiple services. The goal was also to be as convincing as possible, and convince the support desks that they were talking to a real person on the line.
+
+Data:
+
+Google Duplex took in various forms of vocal data for processing. This includes voice commands, conversation context, and automatic speech recognition.
+
+Method:
+
+With this technology Duplex analyses the data using an advance set of neural networking to arrive at its appropriate response. This result is passed into a text-to-speech software, which is how the AI communicates with the call receiver.
+
+Result:
+
+On live demonstration of the technology the machine made calls to book a restaurant table, and an appointment in a hair salon. The results were made available to hear in the audience. The device umed and erred like any person would, and none of the people it called suspected it of being an AI.
+While many of the articles I read were worried about this technology I honestly wasn't. I did wonder whether this counted as passing the supposed Turing Test, or if that's an adequate benchmark for AI now.
+
+
+
+
+
+
+
+SOURCE
+
+https://www.verizon.com/about/our-company/fourth-industrial-revolution/how-verizon-using-artificial-intelligence-and-machine-learning-help-maintain-network
+
+AGENT
+
+Verizon
+
+GOAL
+
+Prediction of "custom impacting" events, allowing for pre-emptive action to be taken to prevent them.
+
+DATA
+
+Various metrics regarding the performance of the Verizon networks at any moment, such as load and channel capacity.
+
+METHODS
+
+Using domain expertise to leverage their massive amount of network performance data into actionable insights. These insights will ensure their competitive advantage and network leadership well into the future.
+
+RESULTS
+
+Additional and faster ways to improve the performance of their network.
+
+COMMENTS
+
+N/A
+
+
+
+
+
+
+
+SOURCE
+
+https://making.lyst.com/2017/02/21/working-with-fashion-models/
+
+AGENT
+
+Lyst
+
+GOAL
+
+Use machine learning to help make recommendations to customers based on several factors. Create an effective algorithm that can process images of clothing and make a recommendation based on the user preferences. 
+
+DATA
+
+The main data citizen at Lyst is the product. A product is a fashion item that's buyable from 1 or more retailers. Each retailer has its own textual description and images for the product. Product are tagged with meta-data by their moderation team, 5 of which Lyst uses as labels to train their model; gender, colour, type, category and subcategory. Gender is male or female, colour is one of their 16 Lyst colours. Type, category and subcategory form their internal fashion taxonomy. Examples include shoes -> trainers -> hi-top trainers and clothing -> dresses -> gowns. There are only 5 types but 158 subcategories.
+
+METHODS
+
+In terms of pre-processing they use the semi-standard method of mean subtraction with an aspect-ratio preserving scale followed by a random crop. For regularisation they randomly copy and mirror half the batch horizontally. they do not use other augmentations like rotation or vertical reflection because the objects in their images are rarely, if ever, angled in that manner. they used chainer for training. they trained on AWS using 4 GPUs. The model is trained via SGD with momentum and the learning rate was controlled manually based on the validation set loss. they used batch normalisation with dropout and weight decay. With the ZFNet architecture, they had to use a batch size of 64 due to hardware limitations. they trained for 20 epochs and dropped the learning rate by an order of magnitude twice from the initial value of 0.01. they found this produced better results than using an adaptive learning rate-based algorithm.
+
+RESULTS
+
+They ended up with a global accuracy of 73% on the validation set. Some tasks were easy (type: 95%), other tasks such as category were much harder. The multi-task accuracy can be boosted above 80% with the inclusion of textual features and they recently boosted colour accuracy over 90% by fixing their labels.
+
+COMMENTS
+
+Lysts Image processing technology is very impressive. If these tasks can be automated without the need for any human interaction, then it is possible to apply this technology to many more parts of the company.
+
+
+
+
+
+
+SOURCE
+https://www.wired.com/2012/06/google-x-neural-network/
+AGENT
+The Google Brain team, led by Andrew Ng and Jeff Dean
+GOAL
+Create a neural network that learns to recognize cats by watching unlabeled images taken from frames of YouTube videos
+DATA
+The "brain" simulation was exposed to 10 million randomly selected YouTube video thumbnails over the course of three days
+METHODS
+after being presented with a list of 20,000 different items, it began to recognize pictures of cats using a "deep learning" algorithm. This was despite being fed no information on distinguishing features that might help identify one.
+RESULTS
+Picking up on the most commonly occurring images featured on YouTube, the system achieved 81.7 percent accuracy in detecting human faces, 76.7 percent accuracy when identifying human body parts and 74.8 percent accuracy when identifying cats.
+COMMENTS
+To increase the accuracy they could have tried using much more data than they did, but that may be easier now with the increased popularity of YouTube nowadays
+
+
+
+
+
+
+SOURCE
+
+https://www.techemergence.com/machine-learning-in-gaming-building-ais-to-conquer-virtual-worlds/ 
+
+AGENT
+
+VideoGameDevelopers GoalImprove Game Worlds and in game interactions DATAelements of a video game world 
+
+METHODS
+
+Reduce lines of code 
+
+RESULTS
+
+Fewer lines of code and more realistic NPCs 
+
+COMMENTS
+
+This article  discusses the use of machine learning in games. This includes both table top strategy and video games. In the case of video games this article outlines how the use of machine learning can overall improve the quality of various aspects of the games. In particular machine learning can aid with adjusting the difficulty of games to suit a players play style. It can also help create a more interactive world by replacing NPCs(non playable characters) and better integrating the role of such characters into the overall world. Improvement in this particular area has been divided into strengths, goals and tactics to measure the progress of machine learning and its impact.
+
+
+
+
+
+
+Source:
+
+Pascoe, J. A. (2018, Jan. 29th), Using AI to Uncover the Mystery of Voynich Manuscript, https://phys.org/news/2018-01-ai-uncover-mystery-voynich-manuscript.html
+Daley, J. (2018, Jan. 31st), Artificial Intelligence Takes a Crack at Decoding the Mysterious Voynich Manuscript, https://www.smithsonianmag.com/smart-news/artificial-intelligence-takes-crack-mysterious-voynich-manuscript-180967983/
+
+Agent:
+
+The task was undertaken by professor Greg Kondrak and graduate student Bradley Hauer
+
+Goal:
+
+Their task was to decode the decipher Voynich Manuscript as a case study. They used an AI to uncover its original language. This had been trained to recognise 380 languages with an accuracy of 97 percent.
+
+Data:
+
+The input for the AI was the 240 pages, and latter the first line after "letters [were] shuffled and vowels dropped".
+
+Method:
+
+The initial to decipher the manuscript, they had to determine the language the scroll was written in. To do this the developed an AI which reads text and predicts the language. The AI makes this prediction by comparing the text to three hundred and eighty language samples. After their hypothesis of the scroll being an alphagram, they shuffled the letters and dropped vowels before passing it in as input.
+
+Result:
+
+What they discovered by doing this is that the most accurate language was Hebrew at 80%. This disproved the initial hypothesis of the manuscript being in Arabic.
+4Seeing as how these were all based on hypothesis, I'm cautious to regard this as entirely the work of artificial intelligence.
+
+
+
+
+
+
+
+SOURCE
+
+Modeling sepsis progression using hidden Markov models https://arxiv.org/pdf/1801.02736.pdf
+
+AGENT
+
+Brenden K. Petersen Et al.
+
+GOAL
+
+Characterizing a patient's progression through stages of sepsis, using a hidden Markov model to enable risk stratification and adaptive, personalized treatment. 
+
+DATA
+
+25,000 patients with suspected or confirmed infection, a subset of the Kaiser Permanente Northern California dataset
+
+METHODS
+
+Hidden Markov model with 5 different states(discharged, 3 states of severity and death). All model parameters were estimated. 
+
+RESULTS
+
+This study demonstrates the utility in using HMMs to provide insight into a patient's underlying physiological trajectory, which may be used to inform clinical decisions. 
+
+COMMENTS
+
+With more work it is possible that this study could predict sepsis trajectory to a higher accuracy than traditional means. 
+
+
+
+
+
+
+
+SOURCE
+
+A Neural Algorithm of Artistic Style https://arxiv.org/pdf/1508.06576.pdf
+
+AGENT
+
+Leon A. Gatys Et al.
+
+GOAL
+
+To create artistic images of high perceptual quality, providing a neural algorithm for the creation of artistic images.
+
+DATA
+
+Images of artworks and any given photograph.
+
+METHODS
+
+Convolutional Neural Network consisting of layers of essentially image filters, each of which extracts a certain feature from the input image. The output of a given layer consists of so-called feature maps, differently filtered versions of the input image. When Convolutional Neural Networks are trained on object recognition, they develop a representation of the image that makes object information increasingly explicit along the processing hierarchy. To obtain a representation of the style of an input image, they use a feature space originally designed to capture texture information. This feature space is built on top of the filter responses in each layer of the network.
+
+RESULTS
+
+The results of this is the ability to render a given photograph in the style of a range of well-known artworks. 
+
+COMMENTS
+
+This produces very visually appealing images in any given artists style. Whether you can call this algorithm's creations anything more than mimicry is up for debate. It raises philisophical questions that probably aren't as interesting as the images it produces. 
+
+
+
+
+
+
+
+
+SOURCE
+
+Colorful Image Colorization https://arxiv.org/pdf/1603.08511.pdf
+
+AGENT
+
+Richard Zhang Et al.
+
+GOAL
+
+Given a grayscale photograph as input, this paper attempts to create a plausible color version of the photograph.
+
+DATA
+
+1.3M images from the ImageNet training set, validated on the first 10k images in the ImageNet validation set, and tested on a separate 10k images.
+
+METHODS
+
+Training a Convolutional Neural Network to map from a grayscale input to a distribution over quantizedcolor value outputs, using a technique for inferring point estimates of color from the predicted color distribution.
+
+RESULTS
+
+The results have shown that colorization with a deep CNN can come closer to producing results indistinguishable from real color photo.
+
+COMMENTS
+
+Although the results aren't always perfect, it is not always obvious from the photo that it was false color. The coloring of the photos appears real. 
+
+
+
+
+
+
+
+
+
+SOURCE
+
+https://www.sciencedaily.com/releases/2018/10/181001171210.htm
+
+AGENT
+
+Emmett Interdisciplinary Program on Environment and Resources (E-IPER)
+
+GOAL
+
+Evaluate risk of not-yet-evaluated facilities failing to meet health and safety constraints.
+
+DATA
+
+Results of past inspections by the U.S. Envrionmental Protection Agency.
+
+METHODS
+
+The researchers deployed a series of models to predict the likelihood of failing an inspection, based on facility characteristics, such as location, industry and inspection history.
+
+RESULTS
+
+Under the scenario with the fewest constraints, the researchers predicted catching up to seven times the number of violations compared to the status quo. When they accounted for more constraints, the number of violations detected was still double the status quo.
+
+COMMENTS
+
+Constraints related spcifically to the Clean Water Act.
+
+
+
+
+
+
+
+
+SOURCE
+
+https://www.adweek.com/digital/deepface/#/
+
+AGENT
+
+Yaniv Taigman
+
+GOAL
+
+Apply Machine Learning to pictures on Facebook. The goal of the project DeepFace was apply algorithms to pictures on Facebook. They wanted DeepFace to recognise familiar faces from our contact list.
+
+DATA
+
+The deep-learning part of DeepFace consists of nine layers of simple simulated neurons, with more than 120 million connections between them. To train that network, Facebooks researchers tapped a tiny slice of data from their companys hoard of user imagesfour million photos of faces belonging to almost 4,000 people.
+
+METHODS
+
+DeepFace performs what researchers call facial verification (it recognizes that two images show the same face), not facial recognition (putting a name to a face). DeepFace processes images of faces in two steps. First it corrects the angle of a face so that the person in the picture faces forward, using a 3-D model of an average forward-looking face. Then the deep learning comes in as a simulated neural network works out a numerical description of the reoriented face. If DeepFace comes up with similar enough descriptions from two different images, it decides they must show the same face.
+
+RESULTS
+
+Their method reaches an accuracy of 97.25 percent on the Labelled Faces in the Wild (LFW) dataset, reducing the error of the current state of the art by more than 25 percent, closely approaching human-level performance.
+
+COMMENTS
+
+This could have a lot of applications, outside of what it is being used for now. This application of deep learning will surely have a big impact in the future. It is very possible that this could soon perform better than humans.
+
+
+
+
+
+
+
+SOURCE
+
+https://sebastianraschka.com/Articles/2015_singlelayer_neurons.html
+
+AGENT
+
+Frank Rosenblatt 
+ 
+GOAL
+
+To define an algorithm in order to learn the values of the weights w that are then multiplied with the input features in order to make a decision whether a neuron fires or not.
+
+DATA
+
+The initial idea of the perceptron dates back to the work of Warren McCulloch and Walter Pitts in 1943, who drew an analogy between biological neurons and simple logic gates with binary outputs. In more intuitive terms, neurons can be understood as the subunits of a neural network in a biological brain. 
+
+METHODS
+
+The Unit Step Function was used. Here  we will label the positive and negative class in our binary classification setting as “1” and “-1”, respectively. Next, we define an activation function g(z) that takes a linear combination of the input values x and weights w as input (z=w1x1+⋯+wmxm), and if g(z) is greater than a defined threshold θ we predict 1 and -1 otherwise; in this case, this activation function g is an alternative form of a simple “unit step function,” which is sometimes also called “Heaviside step function.”
+The perceptron algorithm is about learning the weights for the input signals in order to draw linear decision boundary that allows us to discriminate between the two linearly separable classes +1 and -1.
+
+RESULTS
+
+The perceptron converges after the 6th iteration and separates the two flower classes perfectly.
+
+COMMENTS
+
+Frank Rosenblatt proofed mathematically that the perceptron learning rule converges if the two classes can be separated by linear hyperplane, but problems arise if the classes cannot be separated perfectly by a linear classifier.
+
+
+
+
+
+
+
+SOURCE
+
+https://www.sqlchick.com/entries/2015/8/22/what-is-the-cortana-analytics-suite
+https://www.youtube.com/watch?v=iMCD3WR1Qa0
+https://centricconsulting.com/blog/microsoft-cortana-intelligence-suite-transforms-data-analytics/
+
+AGENT
+
+Seayoung Rhee (Technical Product Manager for Cortana Intelligence at Microsoft)
+
+GOAL
+
+Use machine learning techniques within natural language processing and voice UI industry to reduce the error rate of speech recognition. 
+
+DATA
+
+In IoT scenarios, data can come in from various streams such as business apps, custom apps, sensors and devices. Data then gets processed within the cortana intelligence suite where further analysis is carried out. 
+
+METHODS
+
+The Cortana Intelligence suite is divided into components for information management, big data stores, machine learning and analytics, visualisation, and intelligence. The primary elements of the machine learning component consisted of Azure machine learning, Azure HDInsight, Azure Data Lake Analytics, and Azure Stream Analytics.
+
+RESULTS
+
+TechCrunch spoke of Cortana as being a small part of the solution to the broad platform – Cortana Intelligence Suite. The suite can be used to propel a business forward in machine learning. One big feature is that it can easily integrate with advanced apps. It now allows customers to implement Hadoop processing and real-time event processing to help influence business factors. 
+
+COMMENTS
+
+
+
+
+
+
+
+
+SOURCE 
+
+https://blog.openai.com/glow/?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more
+
+AGENT
+
+OpenAI's Glow
+
+GOAL 
+
+To create a reversable generative model that can generate high resolution and realistically convincible images of people that can be manipulated or mixed.
+
+DATA 
+
+The data is taken from images. The agent interprets the image as data understanding all structure that is present in the image/data.
+
+METHODS 
+
+Glow uses a flow-based generative model combined with training examples to render high resolution images.
+
+RESULTS 
+
+Glow has achieved much better benchmarks compared to the previous most successful flow-based generative model which was RealVPN and can generate models very quickly depending on the graphics processing unit of the machine it is being ran on.
+
+COMMENTS 
+
+While glow may be a fun tool for seeing what you're going to look like in ten years , or to see what you'd look like if you were blonde, it shows how images can be taken as data and manipulated using the agent. The model itself has many applications besides manipulating an image such as text analysis or speech synthesis.
+
+
+
+
+
+
+
+SOURCE
+
+ CIO From IDG (https://www.cio.com/article/3225445/artificial-intelligence/machine-learning-success-stories.html)
+
+AGENT
+
+ Cynthia Stoddard (Adobe Systems)
+
+GOAL
+
+ To Create software that eliminates or mitigate those events which triggers the system failures. 
+
+DATA
+ 
+ The logs and other necessary data which will be sent from the Adobe softwares to the backend systems.
+
+
+METHODS
+
+ The software will send the data to algorithm which will then start learning about the behaviour of the Adobe software and predicts the failure. “If you know you have to fix something and you know how to fix it, then you can automate it,” says Cynthia Stoddard
+
+RESULTS
+
+ They calling this as HAAS " Healing as a Service", has reduced fix times from 30 minutes performed manually by humans to 1 minute. She estimates it has saved Adobe 330 hours of time remediating issues in the past several months
+
+COMMENTS
+
+ This HaaS is very helpful and necessary tool, this save lots of time and reduce the software failures.
+
+
+
+
+
+
+
+SOURCE
+
+https://www.techechelons.com/blog/deepface-unleashed-what-does-the-facebook-do-to-recognize-faces
+https://www.quora.com/Which-face-detection-algorithm-is-used-by-Facebook
+
+AGENT
+
+Facebook
+
+GOAL
+
+To be able to detect with considerable confidence whether two images represent the same person or not, preferably without concern for surrounding light, camera angles and colors on face. 
+
+DATA
+
+Template based on a person's facial features. Attributes within this template describe things like the juxtaposition of certain characteristics on the frame of the face. The Facebook team used more than 4 million facial images of more than 4000 people to feed training data to the learning system. 
+
+METHODS
+
+When a square box starts appearing over faces in facebook photos, this is a feature designed to let a user tag their friends. Facebook use a facial recognition software called DeepFace to map attributes of facial characteristics to a real person. The four stages in the data pipeline consist of: detect, align, represent, and classify. When you add 3D transformation and piece-wise affine transformation, the algorithm becomes more and more accurate. A face representation is derived from a nine-layer deep neural network. Layers do not have weight sharing deployed which is the contrary to standard convolution layers. 
+
+
+RESULTS
+
+DeepFace detects whether two faces in different photos are of the same person with 97.47% accuracy, regardless of lighting conditions or angles. As a comparison, humans generally have an average of 97.65% accuracy. This means that Facebook’s facial processing software has nearly the same accuracy as humans. The output of the algorithm is a face representation derived from a nine-layer neural network which holds more than 120 million variables, each mapped to various local layers. 
+
+COMMENTS
+
+
+
+
+
+
+
+
+SOURCE
+
+A Robot Wrote A Chapter To A Harry Potter Book, And It's Absolutely Insane - https://www.youtube.com/watch?v=XFYckCslt74 http://botnik.org/content/harry-potter.html
+
+AGENT
+
+Botnik Studios AI Bot
+
+GOAL
+
+To write a chapter of Harry Potter fan-fiction
+
+DATA
+
+All seven Harry Potter books written by J.K.Rowling
+
+METHODS
+
+Predictive algorithm was used.
+
+RESULTS
+
+The bot wrote 13 chapters of a book called "Harry Potter and the Portrait of What Looked Like a Large Pile of Ash".
+
+COMMENTS
+
+The book was terrible and funny in a way. The story didn't make any sense. Only good thing about the book was the grammar which didn't had errors.
+
+
+
+
+
+
+
+
+SOURCE
+
+http://mentalfloss.com/article/503178/brief-history-deep-blue-ibms-chess-computer
+http://www-03.ibm.com/ibm/history/exhibits/vintage/vintage_4506VV1001.html
+https://www.wired.com/2017/05/what-deep-blue-tells-us-about-ai-in-2017/
+
+AGENT
+
+IBM
+
+GOAL
+
+ Beat the world champion at chess (Kasparov at the time)
+
+DATA
+
+The state of the board in almost all possible states, that the 32 pieces on the board and the ways in which they can move, also learned mostly from playing against multiple human chess players to learn counters to different moves.
+
+METHODS
+
+Deep Blue was a combination of special purpose hardware and software with an IBM RS/6000 SP2  -- a system capable of examining 200 million moves per second, or 50 billion positions, in the three minutes allocated for a single move in a chess game.
+First the machine needs to understand the state of the board, that's relatively easy, but then it needs to predict future moves. Given that the 32 pieces on the board are capable of moving to a variety of other positions, the "possibility space" for the next move (and all subsequent moves) is very large.
+In theory, a sufficiently beefy computer could simulate every possible move (and counter-move) in its memory, rank which moves end up doing best in each simulated game, and then perform the optimal move on each turn. But to actually implement a computer that powerful, and fast enough to compete in a time-limited tournament, was a matter of extreme effort. It took Hsu more than a decade to master it.
+
+RESULTS
+
+In the first ever traditional chess match between a man (world champion Garry Kasparov) and a computer (IBM's Deep Blue) in 1996, Deep Blue won one game, tied two and lost three. The next year, Deep Blue defeated Kasparov in a six-game match -- the first time a reigning world champion lost a match to a computer opponent in tournament play
+
+COMMENTS
+
+This showed the power of the technology then so if this was to be developed now it would be so much faster, smarter and harder to beat, which is very scary considering that this achievemnt is only just over 20 years ago.
+
+
+
+
+
+SOURCE
+
+https://arxiv.org/abs/1805.01934?utm_source=mybridge&utm_medium=blog&utm_campaign=read_more
+
+AGENT
+
+Chen Chen, Qifeng Chen, Jia Xu, Vladlen Koltun
+
+GOAL
+
+Imaging in low light
+
+DATA
+
+A dataset of raw short-exposure low-light images, with corresponding long-exposure reference images
+
+METHODS
+
+Using the presented dataset, they develop a pipeline for processing low-light images, based on end-to-end training of a fully-convolutional network. The network operates directly on raw sensor data and replaces much of the traditional image processing pipeline, which tends to perform poorly on such data.
+
+RESULTS
+
+https://www.youtube.com/watch?v=qWKUFK7MWvg&feature=youtu.be
+
+COMMENTS	
+
+
+
+
+
+
+Source: 
+
+https://towardsdatascience.com/using-machine-learning-to-simulate-world-cup-matches-959e24d0731
+
+Agent: 
+
+Rodrigo Nader
+
+Goal: 
+
+Simulate the knockout stage of the 2018 world cup to predict a winner
+
+Data: 
+
+Data was obtained from Fifa Index
+
+Methods: 
+
+Using team performence and overall values for the teams over years each was given various different values. Using these values a model was created to take the values in and comprise a % chance of each team winning.
+
+Results: 
+
+An interesting knock out graph estimating spain would ultimately win. though the model has a 30% error rate. 
+
+Comments: 
+
+I believe this was ultimately a fruitless effort as to accurately simulate a winner for these matches, human error, bad days, whether preferences and even age of players all need to be taken into account. If the model was possibly improves to include and allow for all these things it would be interesting to see if it would be possible to create a model that could accurately choose the winner out of a large group of countries.
+
+
+
+
+
+
+Source: 
+
+https://towardsdatascience.com/a-machine-learning-approach-building-a-hotel-recommendation-engine-6812bfd53f50
+https://www.kaggle.com/c/expedia-hotel-recommendations/data
+
+Agent:
+
+Susan Li, Expedia hotel search.
+
+Goal: 
+
+aim to create the optimal hotel recommendations for Expedia.fs users that are searching for a hotel to book. 
+
+Data:
+
+Anonymous data and almost all fields are in numeric formet, the data can be seen in the source links. They used train.csv which captured the logs of user behaviour and destination.csv which contains information related to hotel reviews made by users.
+
+Methods: 
+
+They attemtped to predict what hotel cluster a user would book based on information in their search. 
+
+Results:
+
+Though they attempted to use multiple algorithms they seemed unable to get a low enough error value and concluded that further feature engineering would be needed.
+
+Comments:
+
+Using actual user data was a great way to evaluate real life scenarios and get the best possible chance for the algorithms to get the best results. Though they used many different algorithms they didn't seem to get a satifactorty result. Perhaps had they expanded their sample size or changed the hotel clusters it could have resulted in a better result.
